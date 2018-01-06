@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/summer.iml" filepath="$PROJECT_DIR$/summer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/summer-beans/summer-beans.iml" filepath="$PROJECT_DIR$/summer-beans/summer-beans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/summer-common/summer-common.iml" filepath="$PROJECT_DIR$/summer-common/summer-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/summer-core/summer-core.iml" filepath="$PROJECT_DIR$/summer-core/summer-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/summer-test/summer-test.iml" filepath="$PROJECT_DIR$/summer-test/summer-test.iml" />
+    </modules>
+  </component>
+</project>
