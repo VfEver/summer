@@ -1,4 +1,4 @@
-package com.summer.resource.io;
+package com.summer.core.resource.io;
 
 import java.io.*;
 

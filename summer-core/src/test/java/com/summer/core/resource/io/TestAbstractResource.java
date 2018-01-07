@@ -1,4 +1,4 @@
-package com.summer.resource.io;
+package com.summer.core.resource.io;
 
 import junit.framework.TestCase;
 import org.junit.Test;
@@ -25,20 +25,20 @@ public class TestAbstractResource extends TestCase{
     @Test
     public void test01 () throws Exception {
 
-        File file = new File("src/resource/file.txt");
+        File file = new File("src/test/resources/file.txt");
 
-        System.out.println("file.txt is exist? - " + file.exists());
-        System.out.println("file.txt's absolute path is : " + file.getAbsolutePath());
-        System.out.println("file.txt's path is : " + file.getPath());
-        System.out.println("file.txt's cano is : " + file.getCanonicalPath());
+        logger.info("file.txt is exist? - " + file.exists());
+        logger.info("file.txt's absolute path is : " + file.getAbsolutePath());
+        logger.info("file.txt's path is : " + file.getPath());
+        logger.info("file.txt's cano is : " + file.getCanonicalPath());
         AbstractResource resource = new AbstractResource(file) {
         };
-        System.out.println("-------------------");
-        System.out.println("AbstractResource is exist? - " + resource.isExist());
+        logger.info("-------------------");
+        logger.info("AbstractResource is exist? - " + resource.isExist());
 
         InputStream inputStream = resource.getInputStream();
         byte[] b = new byte[(int) file.length()];
         inputStream.read(b);
-        System.out.println(new String(b));
+        logger.info(new String(b));
     }
 }
