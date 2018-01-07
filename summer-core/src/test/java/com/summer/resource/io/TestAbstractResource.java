@@ -2,11 +2,15 @@ package com.summer.resource.io;
 
 import junit.framework.TestCase;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.InputStream;
 
 public class TestAbstractResource extends TestCase{
+
+    private Logger logger = LoggerFactory.getLogger(TestAbstractResource.class);
 
     @Override
     protected void setUp() throws Exception {
