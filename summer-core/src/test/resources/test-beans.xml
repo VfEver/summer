@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans>
+
+    <bean id="testBean" class="com.summer.core.resource.parse.ResourceReader">
+        <value>change</value>
+    </bean>
+
+</beans>
