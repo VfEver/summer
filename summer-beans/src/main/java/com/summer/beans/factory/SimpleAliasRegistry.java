@@ -90,4 +90,26 @@ public class SimpleAliasRegistry implements AliasRegistry {
                     " has already been register for bean name " + name);
         }
     }
+
+    /**
+     * Determine the raw name, resolving aliases to canonical names.
+     * @param name
+     * @return
+     */
+    public String getCanonicalName(String name) {
+
+        String canonicalName = name;
+        String resolvedName;
+
+        do {
+
+            resolvedName = aliasMap.get(canonicalName);
+            if (resolvedName != null) {
+
+                canonicalName = resolvedName;
+            }
+        } while (resolvedName != null);
+
+        return canonicalName;
+    }
 }
