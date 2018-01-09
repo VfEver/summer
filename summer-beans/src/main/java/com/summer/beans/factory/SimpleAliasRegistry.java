@@ -3,6 +3,8 @@ package com.summer.beans.factory;
 import com.summer.common.support.Assert;
 import com.summer.common.utils.StringUtils;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -24,13 +26,14 @@ public class SimpleAliasRegistry implements AliasRegistry {
         Assert.hasText(name, "the bean's specific name can't be empty");
         Assert.hasText(alias, "the alias registed can't be empty");
 
-        //TODO shold be carried to check circling.
+        checkForAliasCircle(alias, name);
         this.aliasMap.put(alias, name);
     }
 
     @Override
     public void removeAlias(String alias) {
 
+        Assert.hasText(alias, "the alias registed can't be empty");
         this.aliasMap.remove(alias);
     }
 
@@ -44,7 +47,47 @@ public class SimpleAliasRegistry implements AliasRegistry {
     @Override
     public String[] getAlias(String name) {
 
+        Assert.hasText(name, "the alias registed can't be empty");
+        List<String> aliasList = new ArrayList<>(8);
 
-        return new String[0];
+        for (Map.Entry<String, String> entry : aliasMap.entrySet()) {
+
+            if (name.equals(entry.getValue())) {
+
+                aliasList.add(entry.getKey());
+            }
+        }
+        return StringUtils.toStringArray(aliasList);
+    }
+
+    @Override
+    public boolean hasAlias(String alias, String name) {
+
+        for (Map.Entry<String, String> entry : aliasMap.entrySet()) {
+
+            String registeredName = entry.getValue();
+            if (registeredName.equals(name)) {
+
+                String registeredAlias = entry.getKey();
+                return alias.equals(registeredAlias) || hasAlias(registeredAlias, alias);
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Check whether the given name points back to the given alias as an alias
+     * in the other direction already, catching a circular reference upfront
+     * and throwing a corresponding IllegalStateException.
+     * @param alias
+     * @param name
+     */
+    public void checkForAliasCircle(String alias, String name) {
+
+        if (hasAlias(alias, name)) {
+
+            throw new IllegalStateException("the alias " + alias +
+                    " has already been register for bean name " + name);
+        }
     }
 }

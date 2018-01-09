@@ -32,4 +32,12 @@ public interface AliasRegistry {
      * @return
      */
     String[] getAlias(String name);
+
+    /**
+     * is the alias is the name's alias
+     * @param alias
+     * @param name
+     * @return
+     */
+    boolean hasAlias(String alias, String name);
 }

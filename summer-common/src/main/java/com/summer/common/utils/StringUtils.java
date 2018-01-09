@@ -1,5 +1,7 @@
 package com.summer.common.utils;
 
+import java.util.Collection;
+
 /**
  * String util,a tool class to deal with String conveniently.
  * @author zys
@@ -28,5 +30,15 @@ public class StringUtils {
     public static boolean isNotEmpty(String string) {
 
         return !isEmpty(string);
+    }
+
+    /**
+     * make the collection to array.
+     * @param collection
+     * @return
+     */
+    public static String[] toStringArray (Collection<String> collection) {
+
+        return collection.toArray(new String[collection.size()]);
     }
 }
