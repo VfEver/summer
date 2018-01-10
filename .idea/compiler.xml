@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="summer-beans" />
         <module name="summer-common" />
+        <module name="summer-context" />
         <module name="summer-core" />
         <module name="summer-test" />
         <module name="summer-tests" />
@@ -18,6 +19,7 @@
       <module name="summer" target="1.8" />
       <module name="summer-beans" target="1.8" />
       <module name="summer-common" target="1.8" />
+      <module name="summer-context" target="1.8" />
       <module name="summer-core" target="1.8" />
       <module name="summer-test" target="1.8" />
       <module name="summer-tests" target="1.8" />

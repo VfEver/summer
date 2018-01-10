@@ -10,6 +10,7 @@
     <module>summer-beans</module>
     <module>summer-common</module>
     <module>summer-test</module>
+      <module>summer-context</module>
   </modules>
   <packaging>pom</packaging>
 
