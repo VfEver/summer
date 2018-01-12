@@ -49,7 +49,7 @@ public class DefaultSingletonRegistry extends SimpleAliasRegistry
                 String errorMsg = "singleton registry has already has this bean - " + beanName;
                 throw new SingletonBeanExistException(errorMsg);
             }
-            logger.info(logInfo + "add instance named {} into factory", beanName);
+            logger.debug(logInfo + "add instance named {} into factory", beanName);
             this.singletonObjects.put(beanName, singletonObject);
         }
     }
@@ -68,7 +68,9 @@ public class DefaultSingletonRegistry extends SimpleAliasRegistry
     @Override
     public boolean containsSingleton(String name) {
 
-        return this.singletonObjects.containsKey(name);
+        return this.singletonCurrentlyInCreation.contains(name) ||
+                this.earlySingletonObjects.containsKey(name) ||
+                this.singletonObjects.containsKey(name);
     }
 
     @Override
@@ -77,7 +79,7 @@ public class DefaultSingletonRegistry extends SimpleAliasRegistry
         int count = 0;
         synchronized (this.singletonObjects) {
 
-            logger.info(logInfo + "get the number of the singleton instance.");
+            logger.debug(logInfo + "get the number of the singleton instance.");
             count = this.singletonObjects.size();
         }
         return count;
@@ -100,13 +102,13 @@ public class DefaultSingletonRegistry extends SimpleAliasRegistry
     }
 
     /**
-     * destroy the factory,use for subclass.
+     * destroy the singleton instance,use for subclass.
      */
-    protected void destroy() {
+    protected void destroySingleton() {
 
         synchronized (this.singletonObjects) {
 
-            logger.info(logInfo + "destroy singleton factory's shared bean instance.");
+            logger.debug(logInfo + "destroy singleton factory's shared bean instance.");
             this.singletonObjects.clear();
             this.earlySingletonObjects.clear();
             this.singletonCurrentlyInCreation.clear();
