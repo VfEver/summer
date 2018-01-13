@@ -1,11 +1,12 @@
 package com.summer.beans;
 
+import com.summer.beans.bean.BeanPlaceHolder;
 import com.summer.beans.enums.BeanScopeEnum;
 
 /**
  * abstract class implements BeanPlaceHolder.
  */
-public abstract class AbstractBeanPlaceHolder implements BeanPlaceHolder{
+public abstract class AbstractBeanPlaceHolder implements BeanPlaceHolder {
 
     /**
      * the bean's id

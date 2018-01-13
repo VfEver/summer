@@ -101,6 +101,11 @@ public class DefaultSingletonRegistry extends SimpleAliasRegistry
         }
     }
 
+    protected boolean isCurrentInCreation(String name) {
+
+        return this.singletonCurrentlyInCreation.contains(name);
+    }
+
     /**
      * destroy the singleton instance,use for subclass.
      */
