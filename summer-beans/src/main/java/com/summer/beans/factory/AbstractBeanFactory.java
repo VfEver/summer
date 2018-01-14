@@ -2,6 +2,7 @@ package com.summer.beans.factory;
 
 import com.summer.beans.exception.BeanNotFindException;
 import com.summer.beans.exception.CircleReferenceException;
+import com.summer.common.logger.CommonLogger;
 import com.summer.common.support.Assert;
 import com.sun.istack.internal.Nullable;
 import org.slf4j.Logger;
@@ -20,7 +21,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public abstract class AbstractBeanFactory extends DefaultSingletonRegistry implements BeanFactory {
 
-    private Logger logger = LoggerFactory.getLogger(AbstractBeanFactory.class);
+    private Logger logger = CommonLogger.getLogger(AbstractBeanFactory.class);
     private String logInfo = "abstract bean factory, for sub class - ";
 
     /**

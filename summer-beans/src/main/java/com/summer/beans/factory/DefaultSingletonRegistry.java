@@ -1,6 +1,7 @@
 package com.summer.beans.factory;
 
 import com.summer.beans.exception.SingletonBeanExistException;
+import com.summer.common.logger.CommonLogger;
 import com.summer.common.support.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +20,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class DefaultSingletonRegistry extends SimpleAliasRegistry
         implements SingletonBeanRegistry {
 
-    private Logger logger = LoggerFactory.getLogger(getClass());
+    private Logger logger = CommonLogger.getLogger(getClass());
     private String logInfo = "singleton instance operation - ";
     /**
      * singleton bean map,bean name -> bean instance

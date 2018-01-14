@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="528d2268-ec53-4014-be48-bcabec531e09" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanAttribute.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanAttribute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DefaultSingletonRegistry.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefaultSingletonRegistry.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="886">
-              <caret line="111" column="26" lean-forward="false" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
+            <state relative-caret-position="289">
+              <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,8 +42,8 @@
       <file leaf-file-name="AbstractBeanFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1390">
-              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -72,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractBeanDefinition.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AbstractBeanDefinition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/AbstractBeanDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            <state relative-caret-position="684">
+              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1014#1015#0" expanded="true" />
@@ -124,6 +123,7 @@
       <find>BeanFactory</find>
       <find>info</find>
       <find>cano</find>
+      <find>getLogger</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,9 +177,7 @@
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/SingletonBeanRegistry.java" />
         <option value="$PROJECT_DIR$/summer-common/src/main/java/com/summer/common/support/Assert.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/exception/SingletonBeanExistException.java" />
-        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/exception/CircleReferenceException.java" />
-        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java" />
         <option value="$PROJECT_DIR$/summer-aop/pom.xml" />
         <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/ProxyFactory.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanDefinition.java" />
@@ -188,6 +186,8 @@
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanAttribute.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/AbstractBeanDefinition.java" />
+        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java" />
+        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java" />
       </list>
     </option>
   </component>
@@ -252,47 +252,6 @@
             <path>
               <item name="summer" type="b2602c69:ProjectViewProjectNode" />
               <item name="summer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-aop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="summer" type="b2602c69:ProjectViewProjectNode" />
@@ -392,117 +351,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-context" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-context" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-context" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-context" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-context" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-context" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="logger" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -678,7 +527,7 @@
       <workItem from="1515764674668" duration="2250000" />
       <workItem from="1515769122780" duration="816000" />
       <workItem from="1515812112071" duration="8678000" />
-      <workItem from="1515929732657" duration="7827000" />
+      <workItem from="1515929732657" duration="8555000" />
     </task>
     <task id="LOCAL-00001" summary="【初始化项目结构】  --赵延升  2018年1月6日20:53:31&#10;init project structure.  --zys  2018年1月6日20:53:40">
       <created>1515243250845</created>
@@ -771,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515856992452</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="bean definition complete.  --zys  2018年1月14日22:05:38">
+      <created>1515938749151</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1515938749151</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -807,7 +663,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68784000" />
+    <option name="totallyTimeSpent" value="69512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -825,8 +681,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20260416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -841,7 +698,6 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -864,7 +720,8 @@
     <MESSAGE value="implement default singleton registry.  --zys  2018年1月11日23:31:55" />
     <MESSAGE value="little changes,don't want to code,it's weekend evening.  --zys  2018年1月11日23:31:55" />
     <MESSAGE value="dogetBean.  --zys  2018年1月13日23:22:59" />
-    <option name="LAST_COMMIT_MESSAGE" value="dogetBean.  --zys  2018年1月13日23:22:59" />
+    <MESSAGE value="bean definition complete.  --zys  2018年1月14日22:05:38" />
+    <option name="LAST_COMMIT_MESSAGE" value="bean definition complete.  --zys  2018年1月14日22:05:38" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -981,13 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-common/src/main/java/com/summer/common/logger/CommonLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1127,6 +977,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,36 +1037,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="886">
-          <caret line="111" column="26" lean-forward="false" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1390">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1230,10 +1055,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-common/src/main/java/com/summer/common/logger/CommonLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/AbstractBeanDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="684">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1014#1015#0" expanded="true" />
@@ -1256,6 +1097,24 @@
             <element signature="e#1788#1789#0" expanded="true" />
             <element signature="e#1852#1853#0" expanded="true" />
             <element signature="e#1902#1903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
