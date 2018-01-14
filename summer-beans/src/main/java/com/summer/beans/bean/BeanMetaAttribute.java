@@ -23,4 +23,17 @@ public interface BeanMetaAttribute {
      */
     BeanScopeEnum getScope(String name);
 
+    /**
+     * get the name of bean instance
+     * @param name
+     * @return
+     */
+    String getBeanName (String name);
+
+    /**
+     * get the bean's classloader.
+     * @param name
+     * @return
+     */
+    ClassLoader getClassLoader(String name);
 }

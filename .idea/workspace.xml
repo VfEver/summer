@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="528d2268-ec53-4014-be48-bcabec531e09" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanAttribute.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/BeanPlaceHolder.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/AbstractBeanPlaceHolder.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/AbstractBeanPlaceHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/Bean.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanAttribute.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanAttribute.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,31 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SingletonBeanRegistry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/SingletonBeanRegistry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BeanFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/BeanFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DefaultSingletonRegistry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="34" column="110" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="110" />
+            <state relative-caret-position="886">
+              <caret line="111" column="26" lean-forward="false" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,18 +43,8 @@
       <file leaf-file-name="AbstractBeanFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProxyFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/ProxyFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="1390">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,39 +53,53 @@
       <file leaf-file-name="BeanMetaAttribute.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="414">
+              <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanAttribute.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BeanAttribute.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanAttribute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="342">
+              <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanDefinition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanDefinition.java">
+      <file leaf-file-name="AbstractBeanDefinition.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/AbstractBeanDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleAliasRegistry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/SimpleAliasRegistry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1656">
-              <caret line="98" column="34" lean-forward="false" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1014#1015#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
+                <element signature="e#1095#1096#0" expanded="true" />
+                <element signature="e#1137#1138#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
+                <element signature="e#1222#1223#0" expanded="true" />
+                <element signature="e#1289#1290#0" expanded="true" />
+                <element signature="e#1343#1344#0" expanded="true" />
+                <element signature="e#1382#1383#0" expanded="true" />
+                <element signature="e#1417#1418#0" expanded="true" />
+                <element signature="e#1473#1474#0" expanded="true" />
+                <element signature="e#1521#1522#0" expanded="true" />
+                <element signature="e#1561#1562#0" expanded="true" />
+                <element signature="e#1597#1598#0" expanded="true" />
+                <element signature="e#1655#1656#0" expanded="true" />
+                <element signature="e#1705#1706#0" expanded="true" />
+                <element signature="e#1752#1753#0" expanded="true" />
+                <element signature="e#1788#1789#0" expanded="true" />
+                <element signature="e#1852#1853#0" expanded="true" />
+                <element signature="e#1902#1903#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,6 +123,7 @@
       <find>Canonical</find>
       <find>BeanFactory</find>
       <find>info</find>
+      <find>cano</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/summer-core/src/main/java/com/summer/resource/io/AbstractResource.java" />
         <option value="$PROJECT_DIR$/summer-test/src/log4j.properties" />
         <option value="$PROJECT_DIR$/summer-test/src/main/java/com/summer/LoggerTest.java" />
         <option value="$PROJECT_DIR$/summer-tests/pom.xml" />
@@ -207,9 +184,10 @@
         <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/ProxyFactory.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanDefinition.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/Bean.java" />
-        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanPlaceHolder.java" />
+        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanAttribute.java" />
+        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/AbstractBeanDefinition.java" />
       </list>
     </option>
   </component>
@@ -266,9 +244,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,6 +338,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="beans" type="462c0819:PsiDirectoryNode" />
               <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="summer" type="462c0819:PsiDirectoryNode" />
+              <item name="summer-beans" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="summer" type="b2602c69:ProjectViewProjectNode" />
@@ -522,6 +509,7 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -689,7 +677,8 @@
       <workItem from="1515678484222" duration="6740000" />
       <workItem from="1515764674668" duration="2250000" />
       <workItem from="1515769122780" duration="816000" />
-      <workItem from="1515812112071" duration="8590000" />
+      <workItem from="1515812112071" duration="8678000" />
+      <workItem from="1515929732657" duration="7827000" />
     </task>
     <task id="LOCAL-00001" summary="【初始化项目结构】  --赵延升  2018年1月6日20:53:31&#10;init project structure.  --zys  2018年1月6日20:53:40">
       <created>1515243250845</created>
@@ -775,7 +764,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515769823162</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="dogetBean.  --zys  2018年1月13日23:22:59">
+      <created>1515856992450</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1515856992452</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -811,7 +807,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60869000" />
+    <option name="totallyTimeSpent" value="68784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -819,7 +815,6 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -842,6 +837,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -867,22 +863,14 @@
     <MESSAGE value="add summer context.  --zys  2018年1月10日23:45:11" />
     <MESSAGE value="implement default singleton registry.  --zys  2018年1月11日23:31:55" />
     <MESSAGE value="little changes,don't want to code,it's weekend evening.  --zys  2018年1月11日23:31:55" />
-    <option name="LAST_COMMIT_MESSAGE" value="little changes,don't want to code,it's weekend evening.  --zys  2018年1月11日23:31:55" />
+    <MESSAGE value="dogetBean.  --zys  2018年1月13日23:22:59" />
+    <option name="LAST_COMMIT_MESSAGE" value="dogetBean.  --zys  2018年1月13日23:22:59" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/summer-test/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-tests/src/log4j.properties" />
     <entry file="file://$PROJECT_DIR$/summer-test/src/main/java/com/summer/test/LoggerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1042,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,13 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-common/src/main/java/com/summer/common/support/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/IllegalStateException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1100,27 +1080,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/SingletonBeanRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/BeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/setup/mvn_repo/repository/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar!/org/slf4j/Logger.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,25 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="106" column="19" lean-forward="false" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/SimpleAliasRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1656">
-          <caret line="98" column="34" lean-forward="false" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="34" column="110" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1154,7 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,7 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,7 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,7 +1127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,18 +1138,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/ProxyFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1222,19 +1154,109 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/SimpleAliasRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="101" column="28" lean-forward="true" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/SingletonBeanRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/BeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-common/src/main/java/com/summer/common/support/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="886">
+          <caret line="111" column="26" lean-forward="false" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1390">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanMetaAttribute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="414">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanAttribute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="342">
+          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/AbstractBeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
+            <element signature="e#1473#1474#0" expanded="true" />
+            <element signature="e#1521#1522#0" expanded="true" />
+            <element signature="e#1561#1562#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
+            <element signature="e#1705#1706#0" expanded="true" />
+            <element signature="e#1752#1753#0" expanded="true" />
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#1852#1853#0" expanded="true" />
+            <element signature="e#1902#1903#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
