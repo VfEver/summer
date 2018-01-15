@@ -20,13 +20,13 @@ public interface BeanFactory {
 
     /**
      * get the bean
-     * @param id
+     * @param name
      * @param tClass
      * @param <T>
      * @return
      * @throws BeanNotFindException
      */
-    <T> T getBean(String id, Class<T> tClass) throws BeanNotFindException;
+    <T> T getBean(String name, Class<T> tClass) throws BeanNotFindException;
 
     /**
      * whether the factory contains this bean with this name,
@@ -49,7 +49,7 @@ public interface BeanFactory {
      * @return
      * @throws BeanNotFindException
      */
-    boolean isPrototype() throws BeanNotFindException;
+    boolean isPrototype(String name) throws BeanNotFindException;
 
     /**
      * get the named bean's class
