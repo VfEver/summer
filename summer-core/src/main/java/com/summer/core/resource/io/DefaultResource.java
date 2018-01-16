@@ -7,25 +7,25 @@ import java.io.*;
  * @author zys
  * @date 2018/01/06
  */
-public abstract class AbstractResource implements InputStreamResource{
+public class DefaultResource implements InputStreamResource{
 
     private File file;
     private String filePath;
 
-    public AbstractResource () {
+    public DefaultResource() {
     }
 
-    public AbstractResource (File file) {
+    public DefaultResource(File file) {
 
         this(file, file.getAbsolutePath());
     }
 
-    public AbstractResource (String filePath) {
+    public DefaultResource(String filePath) {
 
         this(new File(filePath), filePath);
     }
 
-    public AbstractResource (File file, String filePath) {
+    public DefaultResource(File file, String filePath) {
 
         this.file = file;
         this.filePath = filePath;

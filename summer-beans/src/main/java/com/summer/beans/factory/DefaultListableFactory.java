@@ -27,6 +27,15 @@ public class DefaultListableFactory extends AbstractBeanFactory {
      */
     private Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>(32);
 
+    public DefaultListableFactory () {
+
+        super();
+    }
+
+    public DefaultListableFactory (BeanFactory beanFactory) {
+
+        super(beanFactory);
+    }
     @Override
     public boolean containsBean(String name) {
 
@@ -117,6 +126,18 @@ public class DefaultListableFactory extends AbstractBeanFactory {
         }
 
         return object;
+    }
+
+    /**
+     * destory Factory
+     */
+    public void destoryFactory() {
+
+        super.destroySingleton();
+        if (this.beanDefinitionMap !=null) {
+
+            this.beanDefinitionMap.clear();
+        }
     }
 
 }

@@ -29,7 +29,7 @@ public class TestResourceReader extends TestCase {
 
     public void testGetDocument() throws IOException {
 
-        AbstractResource resource = new AbstractResource("src/test/resources/test-beans.xml") {
+        DefaultResource resource = new DefaultResource("src/test/resources/test-beans.xml") {
         };
         ResourceReader resourceReader = new ResourceReader(resource);
 

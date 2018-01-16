@@ -1,6 +1,7 @@
 package com.summer.core.resource.parse;
 
 import com.summer.common.logger.CommonLogger;
+import com.summer.core.resource.io.DefaultResource;
 import com.summer.core.resource.io.InputStreamResource;
 import com.summer.core.resource.utils.SAXReaderUtils;
 import org.dom4j.Document;
@@ -26,12 +27,15 @@ public class ResourceReader {
 
     public ResourceReader () {
 
-        this(null);
     }
 
     public ResourceReader (InputStreamResource inputStreamResource) {
 
         this.inputStreamResource = inputStreamResource;
+    }
+
+    public ResourceReader (String pathFile) {
+        this.inputStreamResource = new DefaultResource(pathFile);
     }
 
     /**

@@ -1,10 +1,7 @@
 package com.summer.beans.factory;
 
 import com.summer.beans.exception.BeanNotFindException;
-import com.summer.beans.exception.CircleReferenceException;
-import com.summer.common.logger.CommonLogger;
 import com.sun.istack.internal.Nullable;
-import org.slf4j.Logger;
 
 import java.util.Collections;
 import java.util.Set;

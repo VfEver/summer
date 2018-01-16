@@ -8,9 +8,9 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.InputStream;
 
-public class TestAbstractResource extends TestCase{
+public class TestDefaultResource extends TestCase{
 
-    private Logger logger = LoggerFactory.getLogger(TestAbstractResource.class);
+    private Logger logger = LoggerFactory.getLogger(TestDefaultResource.class);
 
     @Override
     protected void setUp() throws Exception {
@@ -31,10 +31,10 @@ public class TestAbstractResource extends TestCase{
         logger.info("file.txt's absolute path is : " + file.getAbsolutePath());
         logger.info("file.txt's path is : " + file.getPath());
         logger.info("file.txt's cano is : " + file.getCanonicalPath());
-        AbstractResource resource = new AbstractResource(file) {
+        DefaultResource resource = new DefaultResource(file) {
         };
         logger.info("-------------------");
-        logger.info("AbstractResource is exist? - " + resource.isExist());
+        logger.info("DefaultResource is exist? - " + resource.isExist());
 
         InputStream inputStream = resource.getInputStream();
         byte[] b = new byte[(int) file.length()];

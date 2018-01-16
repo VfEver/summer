@@ -25,11 +25,10 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <!-- dom4j for parse the xml document -->
         <dependency>
-            <groupId>dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
+            <artifactId>beans</artifactId>
+            <groupId>com.summer</groupId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
