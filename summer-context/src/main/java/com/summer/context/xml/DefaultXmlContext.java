@@ -45,8 +45,11 @@ public class DefaultXmlContext extends AbstractXmlContext implements XmlContext 
 
         if (resourceReader != null) {
 
+            //prepare the application context.
             prepareLoad();
+            //initialize the bean factory
             obtainBeanFactory();
+
             int count = loadBeanDefinition(resourceReader);
         }
     }

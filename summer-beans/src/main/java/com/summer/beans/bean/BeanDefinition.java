@@ -7,9 +7,4 @@ package com.summer.beans.bean;
 public class BeanDefinition extends AbstractBeanDefinition{
 
 
-    @Override
-    public String getBeanName(String name) {
-        return this.getInstanceName();
-    }
-
 }

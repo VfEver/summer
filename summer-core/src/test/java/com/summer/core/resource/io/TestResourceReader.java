@@ -1,6 +1,7 @@
 package com.summer.core.resource.io;
 
 import com.summer.common.logger.CommonLogger;
+import com.summer.common.utils.StringUtils;
 import com.summer.core.resource.parse.ResourceReader;
 import junit.framework.TestCase;
 import org.dom4j.Attribute;
@@ -57,6 +58,9 @@ public class TestResourceReader extends TestCase {
         Iterator<Element> iterator = node.elementIterator();
         while(iterator.hasNext()){
             Element e = iterator.next();
+            if (null != e.attribute("class")) {
+                System.out.println("-----------------" + e.attribute("class").getValue());
+            }
             listNodes(e);
         }
     }

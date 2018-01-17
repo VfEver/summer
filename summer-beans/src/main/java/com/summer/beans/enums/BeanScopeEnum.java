@@ -19,8 +19,22 @@ public enum BeanScopeEnum {
     ;
 
     private String scope;
+    public String getScope () {
+
+        return this.scope;
+    }
     BeanScopeEnum(String scope) {
 
         this.scope = scope;
+    }
+    public static BeanScopeEnum of (String scope) {
+
+        for (BeanScopeEnum scopeEnum : BeanScopeEnum.values()) {
+
+            if (scopeEnum.getScope().equals(scope)) {
+                return scopeEnum;
+            }
+        }
+        return null;
     }
 }

@@ -1,10 +1,12 @@
 package com.summer.beans.bean;
 
 import com.summer.beans.enums.BeanScopeEnum;
-import com.summer.common.support.Assert;
+import com.summer.common.utils.StringUtils;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * the abstract class implements the bean's attributes interfaces.
@@ -25,15 +27,17 @@ public abstract class AbstractBeanDefinition implements BeanMetaAttribute, BeanA
     private ClassLoader beanClassLoader;
 
     /**
-     * the bean's instance name
+     * the bean's class name
      */
-    private String instanceName;
+    private String className;
 
     /**
      * the bean's canonical name.
-     * eg:com.summer.beans.FactoryBean
+     * means id
      */
     private String canonicalName;
+
+    private Set<String> aliasNameSet = new HashSet<>(4);
 
     /**
      * the bean attributes' map.
@@ -61,12 +65,12 @@ public abstract class AbstractBeanDefinition implements BeanMetaAttribute, BeanA
         this.beanClassLoader = beanClassLoader;
     }
 
-    public String getInstanceName() {
-        return instanceName;
+    public String getClassName() {
+        return className;
     }
 
-    public void setInstanceName(String instanceName) {
-        this.instanceName = instanceName;
+    public void setClassName(String className) {
+        this.className = className;
     }
 
     public String getCanonicalName() {
@@ -85,9 +89,6 @@ public abstract class AbstractBeanDefinition implements BeanMetaAttribute, BeanA
     }
 
     protected void addAttribute (String name, Class beanClazz) {
-
-        Assert.hasText(name, "the bean's name must not be empty.");
-        Assert.notNull(beanClazz, "the bean attributes' class must not be null.");
 
         this.attributesMap.put(name, beanClazz);
     }
@@ -114,5 +115,16 @@ public abstract class AbstractBeanDefinition implements BeanMetaAttribute, BeanA
     public Class getDefinitionAttributes(String name) {
 
         return this.attributesMap.get(name);
+    }
+
+    @Override
+    public void addAliasName(String aliasName) {
+
+        this.aliasNameSet.add(aliasName);
+    }
+
+    public String[] getAliasName () {
+
+        return StringUtils.toStringArray(this.aliasNameSet);
     }
 }

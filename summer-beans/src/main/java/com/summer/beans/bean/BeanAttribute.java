@@ -19,5 +19,9 @@ public interface BeanAttribute {
      */
     Class getDefinitionAttributes(String name);
 
-
+    /**
+     * add the alias name
+     * @param aliasName
+     */
+    void addAliasName (String aliasName);
 }
