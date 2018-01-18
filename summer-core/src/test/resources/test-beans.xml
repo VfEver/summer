@@ -2,7 +2,7 @@
 <beans>
 
     <bean id="testBean" class="com.summer.core.resource.parse.ResourceReader">
-        <value>change</value>
+        <property name="test" value="123"></property>
     </bean>
 
 </beans>

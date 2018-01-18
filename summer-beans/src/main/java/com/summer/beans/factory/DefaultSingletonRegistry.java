@@ -22,6 +22,8 @@ public class DefaultSingletonRegistry extends SimpleAliasRegistry
 
     private Logger logger = CommonLogger.getLogger(getClass());
     private String logInfo = "singleton instance operation - ";
+
+    private Set<String> singletonSet =  new ConcurrentHashMap<String, String>().keySet();
     /**
      * singleton bean map,bean name -> bean instance
      */
@@ -71,7 +73,8 @@ public class DefaultSingletonRegistry extends SimpleAliasRegistry
 
         return this.singletonCurrentlyInCreation.contains(name) ||
                 this.earlySingletonObjects.containsKey(name) ||
-                this.singletonObjects.containsKey(name);
+                this.singletonObjects.containsKey(name) ||
+                this.singletonSet.contains(name);
     }
 
     @Override
@@ -119,5 +122,14 @@ public class DefaultSingletonRegistry extends SimpleAliasRegistry
             this.earlySingletonObjects.clear();
             this.singletonCurrentlyInCreation.clear();
         }
+    }
+
+    /**
+     * add the singleton bean in set list,occurred in parse xml.
+     * @param name
+     */
+    protected void addSingletonSet (String name) {
+
+        this.singletonSet.add(name);
     }
 }

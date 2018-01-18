@@ -44,7 +44,7 @@ public class BeanDefinitionFactoryBridge {
      * parse the document with beanFactory which given at constructor.
      * @param document
      */
-    public static void parse (Document document) {
+    public void parse (Document document) {
 
         parse(document, beanFactory);
     }
@@ -54,16 +54,16 @@ public class BeanDefinitionFactoryBridge {
      * @param document
      * @param beanFactory
      */
-    public static void parse (Document document, DefaultListableFactory beanFactory) {
+    public void parse (Document document, DefaultListableFactory beanFactory) {
 
         Assert.notNull(document, "the xml document can not be null.");
         Assert.notNull(beanFactory, "the factory can not be null.");
 
         Element rootElement = document.getRootElement();
-
+        recursionParse(rootElement);
     }
 
-    private static void recursionParse (Element element) {
+    private void recursionParse (Element element) {
 
         switch (element.getName()) {
 
@@ -97,7 +97,7 @@ public class BeanDefinitionFactoryBridge {
      * init the bean
      * @param element
      */
-    private static void initBeanDefinition (Element element) {
+    private void initBeanDefinition (Element element) {
 
         BeanDefinition beanDefinition = new BeanDefinition();
         List<Attribute> attributes = element.attributes();
@@ -158,6 +158,12 @@ public class BeanDefinitionFactoryBridge {
 
             beanInnerInit(iterator.next(), beanDefinition);
         }
+
+        beanFactory.addBeanDefinitionMap(beanDefinition);
+
+        if (beanDefinition.getBeanScopeEnum().getScope().equals(BeanScopeEnum.SINGLETON.getScope())) {
+//            beanFactory.addSingletonSet("");
+        }
     }
 
 
@@ -165,7 +171,7 @@ public class BeanDefinitionFactoryBridge {
      * register the bean's alias
      * @param beanDefinition
      */
-    private static void registerAlias (BeanDefinition beanDefinition) {
+    private void registerAlias (BeanDefinition beanDefinition) {
 
         if (beanDefinition.getAliasName() == null ||
                beanDefinition.getAliasName().length <= 0) {
@@ -185,8 +191,15 @@ public class BeanDefinitionFactoryBridge {
      * @param element
      * @param beanDefinition
      */
-    private static void beanInnerInit (Element element, BeanDefinition beanDefinition) {
+    private void beanInnerInit (Element element, BeanDefinition beanDefinition) {
 
+        List<Attribute> attributes = element.attributes();
+        String name = element.attributeValue(NAME);
+        String value = element.attributeValue(VALUE);
+        //TODO ref should be added
+        Assert.hasText(name, "the bean's property name must not be empty.");
+        Assert.hasText(value, "the bean's property value must not be empty.");
 
+        beanDefinition.addProperties(name, value);
     }
 }

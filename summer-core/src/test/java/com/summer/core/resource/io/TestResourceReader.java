@@ -1,7 +1,6 @@
 package com.summer.core.resource.io;
 
 import com.summer.common.logger.CommonLogger;
-import com.summer.common.utils.StringUtils;
 import com.summer.core.resource.parse.ResourceReader;
 import junit.framework.TestCase;
 import org.dom4j.Attribute;
@@ -15,7 +14,7 @@ import java.util.List;
 
 public class TestResourceReader extends TestCase {
 
-    private Logger logger = CommonLogger.getLogger(InputStreamResource.class);
+    private Logger logger = CommonLogger.getLogger(TestResourceReader.class);
     private String logInfo = "test ResourceReader - ";
 
     @Override
@@ -30,8 +29,7 @@ public class TestResourceReader extends TestCase {
 
     public void testGetDocument() throws IOException {
 
-        DefaultResource resource = new DefaultResource("src/test/resources/test-beans.xml") {
-        };
+        DefaultResource resource = new DefaultResource("src/test/resources/test-beans.xml");
         ResourceReader resourceReader = new ResourceReader(resource);
 
         Document document = resourceReader.getDocument();

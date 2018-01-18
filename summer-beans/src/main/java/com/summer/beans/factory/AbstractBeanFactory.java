@@ -35,6 +35,11 @@ public abstract class AbstractBeanFactory extends DefaultSingletonRegistry imple
         this.parentBeanFactory = parentBeanFactory;
     }
 
+    public void setParentBeanFactory(BeanFactory parentBeanFactory) {
+        
+        this.parentBeanFactory = parentBeanFactory;
+    }
+
     @Override
     public Object getBean(String name) throws BeanNotFindException {
 

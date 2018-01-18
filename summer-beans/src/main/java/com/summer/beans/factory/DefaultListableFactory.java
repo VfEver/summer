@@ -71,6 +71,12 @@ public class DefaultListableFactory extends AbstractBeanFactory {
         }
     }
 
+    public void addBeanDefinitionMap (BeanDefinition beanDefinition) {
+
+        Assert.notNull(beanDefinition, "bean definition can not be null while puting the definition into factory.");
+        this.beanDefinitionMap.put(beanDefinition.getCanonicalName(), beanDefinition);
+    }
+
     protected <T> T doGetBean(String name, @Nullable Class<T> clazz, @Nullable Object[] args) {
 
         //make the name is canonical name,not alias name
