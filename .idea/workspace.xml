@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="528d2268-ec53-4014-be48-bcabec531e09" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanDefinition.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanDefinition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java" afterPath="$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/io/TestResourceReader.java" afterPath="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/io/TestResourceReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-core/src/test/resources/test-beans.xml" afterPath="$PROJECT_DIR$/summer-core/src/test/resources/test-beans.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BeanDefinitionFactoryBridge.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BeanDefinitionFactoryBridge.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="165" column="9" lean-forward="true" selection-start-line="165" selection-start-column="9" selection-end-line="165" selection-end-column="9" />
+            <state relative-caret-position="188">
+              <caret line="164" column="30" lean-forward="true" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,17 +43,17 @@
         <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/io/TestResourceReader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
-              <caret line="32" column="69" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="69" />
+              <caret line="32" column="69" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanDefinitionFactoryBridgeTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BeanDefinitionFactoryBridgeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="504">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,7 +64,7 @@
       <file leaf-file-name="BeanScopeEnum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/enums/BeanScopeEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
+            <state relative-caret-position="378">
               <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding />
             </state>
@@ -79,8 +74,8 @@
       <file leaf-file-name="DefaultListableFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            <state relative-caret-position="162">
+              <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+              <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -101,8 +96,8 @@
       <file leaf-file-name="DefaultSingletonRegistry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="130" column="50" lean-forward="true" selection-start-line="130" selection-start-column="50" selection-end-line="130" selection-end-column="50" />
+            <state relative-caret-position="188">
+              <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -111,7 +106,7 @@
       <file leaf-file-name="BeanDefinition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="324">
               <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -159,6 +154,7 @@
       <find>doGetBean</find>
       <find>getDefinitionAttributes</find>
       <find>ConcurrentHashMap&lt;String, String&gt;().keySet()</find>
+      <find>Set&lt;String&gt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -221,8 +217,8 @@
         <option value="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java" />
-        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java" />
         <option value="$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java" />
+        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java" />
       </list>
     </option>
   </component>
@@ -279,9 +275,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -567,6 +560,9 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -769,7 +765,8 @@
       <workItem from="1516027783413" duration="3498000" />
       <workItem from="1516111004658" duration="6403000" />
       <workItem from="1516193561357" duration="9157000" />
-      <workItem from="1516286607331" duration="3670000" />
+      <workItem from="1516286607331" duration="3785000" />
+      <workItem from="1516375852207" duration="817000" />
     </task>
     <task id="LOCAL-00001" summary="【初始化项目结构】  --赵延升  2018年1月6日20:53:31&#10;init project structure.  --zys  2018年1月6日20:53:40">
       <created>1515243250845</created>
@@ -897,14 +894,21 @@
       <option name="project" value="LOCAL" />
       <updated>1516202797654</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="implement parse xml.  --zys  2018年1月18日23:57:41">
+      <created>1516291070432</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1516291070433</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BeanDefinitionFactoryBridgeTest_testParse - 2018.01.18 at 23h 15m 59s.xml">
+    <history-entry file="BeanDefinitionFactoryBridgeTest_testParse - 2018.01.19 at 23h 50m 09s.xml">
       <configuration name="BeanDefinitionFactoryBridgeTest.testParse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanDefinitionFactoryBridgeTest_testParse - 2018.01.18 at 23h 24m 59s.xml">
+    <history-entry file="BeanDefinitionFactoryBridgeTest_testParse - 2018.01.19 at 23h 51m 26s.xml">
       <configuration name="BeanDefinitionFactoryBridgeTest.testParse" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestAbstractResource_test01 - 2018.01.07 at 12h 23m 59s.xml">
@@ -933,7 +937,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92356000" />
+    <option name="totallyTimeSpent" value="93288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -948,7 +952,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995657" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15260416" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -960,7 +964,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3995657" sideWeight="0.496875" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995657" sideWeight="0.496875" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -995,7 +999,8 @@
     <MESSAGE value="begin to do get bean, the implement.  --zys  2018年1月15日23:54:07" />
     <MESSAGE value="begin to parse document.  --zys  2018年1月16日23:44:15" />
     <MESSAGE value="parse document,init the bean definition.  --zys  2018年1月17日23:26:18" />
-    <option name="LAST_COMMIT_MESSAGE" value="parse document,init the bean definition.  --zys  2018年1月17日23:26:18" />
+    <MESSAGE value="implement parse xml.  --zys  2018年1月18日23:57:41" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement parse xml.  --zys  2018年1月18日23:57:41" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1285,9 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="742">
           <caret line="52" column="38" lean-forward="false" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1295,9 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1305,7 +1304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,7 +1359,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="87.5" y="96.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="88.0" y="97.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -1395,7 +1393,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="324">
           <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1408,16 +1406,6 @@
         <state relative-caret-position="72">
           <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1445,26 +1433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/io/TestResourceReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="32" column="69" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/enums/BeanScopeEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
+        <state relative-caret-position="378">
           <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="130" column="50" lean-forward="true" selection-start-line="130" selection-start-column="50" selection-end-line="130" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1472,25 +1444,51 @@
     <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        <state relative-caret-position="162">
+          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/io/TestResourceReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="32" column="69" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="165" column="9" lean-forward="true" selection-start-line="165" selection-start-column="9" selection-end-line="165" selection-end-column="9" />
+        <state relative-caret-position="188">
+          <caret line="164" column="30" lean-forward="true" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

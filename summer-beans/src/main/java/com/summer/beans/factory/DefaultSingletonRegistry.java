@@ -23,7 +23,7 @@ public class DefaultSingletonRegistry extends SimpleAliasRegistry
     private Logger logger = CommonLogger.getLogger(getClass());
     private String logInfo = "singleton instance operation - ";
 
-    private Set<String> singletonSet =  new ConcurrentHashMap<String, String>().keySet();
+    private Set<String> singletonSet = Collections.newSetFromMap(new ConcurrentHashMap<>(32));
     /**
      * singleton bean map,bean name -> bean instance
      */
@@ -128,7 +128,7 @@ public class DefaultSingletonRegistry extends SimpleAliasRegistry
      * add the singleton bean in set list,occurred in parse xml.
      * @param name
      */
-    protected void addSingletonSet (String name) {
+    public void addSingletonSet (String name) {
 
         this.singletonSet.add(name);
     }

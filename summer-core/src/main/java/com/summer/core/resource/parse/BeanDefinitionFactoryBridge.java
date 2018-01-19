@@ -162,7 +162,7 @@ public class BeanDefinitionFactoryBridge {
         beanFactory.addBeanDefinitionMap(beanDefinition);
 
         if (beanDefinition.getBeanScopeEnum().getScope().equals(BeanScopeEnum.SINGLETON.getScope())) {
-//            beanFactory.addSingletonSet("");
+            beanFactory.addSingletonSet(beanDefinition.getCanonicalName());
         }
     }
 
