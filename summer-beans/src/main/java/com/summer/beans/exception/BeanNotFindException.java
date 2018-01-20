@@ -5,7 +5,7 @@ package com.summer.beans.exception;
  * @author zys
  * @date 2016/01/08
  */
-public class BeanNotFindException extends BeanException {
+public class BeanNotFindException extends RuntimeException {
 
     public BeanNotFindException () {
 

@@ -193,7 +193,6 @@ public class BeanDefinitionFactoryBridge {
      */
     private void beanInnerInit (Element element, BeanDefinition beanDefinition) {
 
-        List<Attribute> attributes = element.attributes();
         String name = element.attributeValue(NAME);
         String value = element.attributeValue(VALUE);
         //TODO ref should be added

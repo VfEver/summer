@@ -19,4 +19,9 @@ public class BeanDefinition extends AbstractBeanDefinition{
 
         this.propertiesMap.put(name, value);
     }
+
+    public Map<String, Object> getPropertiesMap () {
+
+        return this.propertiesMap;
+    }
 }

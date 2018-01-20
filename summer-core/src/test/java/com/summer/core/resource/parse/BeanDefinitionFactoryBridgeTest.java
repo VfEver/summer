@@ -15,16 +15,30 @@ public class BeanDefinitionFactoryBridgeTest extends TestCase{
     private Logger logger = CommonLogger.getLogger(BeanDefinitionFactoryBridgeTest.class);
     private String logInfo = "test ResourceReader - ";
 
+    DefaultListableFactory factory = null;
+    BeanDefinitionFactoryBridge bridge = null;
+    DefaultResource resource = null;
+
+    @Override
+    protected void setUp() throws Exception {
+        super.setUp();
+
+        factory = new DefaultListableFactory();
+        bridge = new BeanDefinitionFactoryBridge(factory);
+        resource = new DefaultResource("src/test/resources/test-beans.xml");
+    }
+
     @Test
     public void testParse () throws IOException {
 
-        DefaultListableFactory factory = new DefaultListableFactory();
-        BeanDefinitionFactoryBridge bridge = new BeanDefinitionFactoryBridge(factory);
-
-        DefaultResource resource = new DefaultResource("src/test/resources/test-beans.xml");
         ResourceReader resourceReader = new ResourceReader(resource);
         Document document = resourceReader.getDocument();
         bridge.parse(document);
         System.out.println(factory.containsBean("testBean"));
+    }
+
+    @Test
+    public void testCreateBean () {
+
     }
 }

@@ -20,7 +20,7 @@ public abstract class AbstractBeanFactory extends DefaultSingletonRegistry imple
     private BeanFactory parentBeanFactory;
 
     /**
-     * the set of the bean is being created.
+     * the set of the bean is being created. for prototype.
      * bean name,just for prototype
      */
     private Set<String> currentInCreation = Collections.newSetFromMap(new ConcurrentHashMap<>(32));

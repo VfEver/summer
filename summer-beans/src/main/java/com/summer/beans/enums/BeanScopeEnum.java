@@ -37,4 +37,13 @@ public enum BeanScopeEnum {
         }
         return null;
     }
+
+    public boolean equals (BeanScopeEnum beanScopeEnum) {
+
+        if (beanScopeEnum != null) {
+
+            return this.getScope().equals(beanScopeEnum.getScope());
+        }
+        return false;
+    }
 }

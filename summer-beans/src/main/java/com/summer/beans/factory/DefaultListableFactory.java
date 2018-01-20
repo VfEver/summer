@@ -1,7 +1,7 @@
 package com.summer.beans.factory;
 
 import com.summer.beans.bean.BeanDefinition;
-import com.summer.beans.exception.BeanCreatingException;
+import com.summer.beans.enums.BeanScopeEnum;
 import com.summer.beans.exception.BeanNotFindException;
 import com.summer.beans.exception.CircleReferenceException;
 import com.summer.common.logger.CommonLogger;
@@ -9,6 +9,7 @@ import com.summer.common.support.Assert;
 import com.sun.istack.internal.Nullable;
 import org.slf4j.Logger;
 
+import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -82,7 +83,7 @@ public class DefaultListableFactory extends AbstractBeanFactory {
         //make the name is canonical name,not alias name
         String canonicalName = getCanonicalName(name);
 
-        T object = null;
+        Object object = null;
         //first get the bean from sington registry
         if (containsSingleton(canonicalName)) {
 
@@ -96,7 +97,7 @@ public class DefaultListableFactory extends AbstractBeanFactory {
                 return null;
             }
 
-            object = (T) getSingleton(canonicalName);
+            object = getSingleton(canonicalName);
             //is singleton and haven't been created.
             if (object == null) {
 
@@ -104,14 +105,16 @@ public class DefaultListableFactory extends AbstractBeanFactory {
                 BeanDefinition beanDefinition = this.beanDefinitionMap.get(canonicalName);
                 if (beanDefinition == null) {
 
-                    throw new BeanCreatingException("singleton bean definition not find,name - '" + name + "'");
+                    logger.warn("singleton bean definition not find,name - {}, canonical name - {}", name, canonicalName);
+                    return null;
                 }
 
                 //create bean
-            }
-            return (T) getSingleton(canonicalName);
-        } else {
+                object = createBean(beanDefinition);
 
+            }
+            return (T) object;
+        } else {
             //not a singleton object,check the circle dependency.
             if (prototypeInCreation(canonicalName)) {
 
@@ -125,13 +128,113 @@ public class DefaultListableFactory extends AbstractBeanFactory {
             BeanDefinition beanDefinition = this.beanDefinitionMap.get(canonicalName);
             if (beanDefinition == null) {
 
-                throw new BeanCreatingException("prototype bean definition not find,name - '" + name + "'");
+                logger.warn(logInfo + "bean definition not find,name - {}, canonical name - {}", name, canonicalName);
+                return null;
             }
 
             //create bean
+            object = createBean(beanDefinition);
+            return (T) object;
         }
 
-        return object;
+    }
+
+    /**
+     * create bean with bean definition.
+     * @param beanDefinition
+     * @return
+     */
+    protected Object createBean (BeanDefinition beanDefinition) {
+
+        if (BeanScopeEnum.SINGLETON.equals(beanDefinition.getBeanScopeEnum())) {
+
+            singletonCurrentlyInCreation(beanDefinition.getCanonicalName());
+        } else if (BeanScopeEnum.PROTOTYPE.equals(beanDefinition.getBeanScopeEnum())) {
+
+            prototypeInCreation(beanDefinition.getCanonicalName());
+        }
+
+        return doCreateBean(beanDefinition);
+    }
+
+    /**
+     * create bean with given bean definition.
+     * @param beanDefinition
+     * @return
+     */
+    protected Object doCreateBean (BeanDefinition beanDefinition) {
+
+        Class clazz = beanDefinition.getBeanClazz();
+        Object returnObj = null;
+        try {
+
+            returnObj = clazz.newInstance();
+            Map<String, Object> propertiesMap =beanDefinition.getPropertiesMap();
+
+            for (Map.Entry<String, Object> entry : propertiesMap.entrySet()) {
+
+                String propertyName = entry.getKey();
+                Object propertyValue = entry.getValue();
+                Field field = clazz.getDeclaredField(propertyName);
+                Class fieldClass = field.getType();
+                field.setAccessible(true);
+                String type = fieldClass.getSimpleName();
+
+
+                field.set(returnObj, switchType(type, propertyValue));
+            }
+        } catch (Exception e) {
+
+            logger.error(logInfo + "occurs error while creating bean. - {}", e);
+        }
+
+        if (returnObj != null) {
+
+            if (BeanScopeEnum.SINGLETON.equals(beanDefinition.getBeanScopeEnum())) {
+
+                addSingleton(beanDefinition.getCanonicalName(), returnObj);
+            }
+        }
+        return returnObj;
+    }
+
+    private Object switchType (String type, Object obj) {
+
+        String value = (String) obj;
+        Object result = null;
+        switch (type) {
+            case "Integer": case "int": {
+
+                result = Integer.parseInt(value);
+                break;
+            }
+
+            case "String" : {
+                result = String.valueOf(value);
+                break;
+            }
+
+            case "Short" : case "short" : {
+                result = Short.parseShort(value);
+                break;
+            }
+
+            case "Byte" : case "byte" : {
+                result = Byte.parseByte(value);
+                break;
+            }
+
+            case "Long" : case "long" : {
+                result = Long.parseLong(value);
+                break;
+            }
+
+            default: {
+                break;
+            }
+        }
+
+        return result;
     }
 
     /**

@@ -132,4 +132,14 @@ public class DefaultSingletonRegistry extends SimpleAliasRegistry
 
         this.singletonSet.add(name);
     }
+
+    /**
+     * put the singleton bean into singletonCurrentlyInCreation when it's being created.
+     * @param name
+     */
+    public void singletonCurrentlyInCreation (String name) {
+
+        this.singletonCurrentlyInCreation.add(name);
+    }
+
 }

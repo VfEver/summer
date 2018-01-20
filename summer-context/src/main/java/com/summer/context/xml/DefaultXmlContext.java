@@ -1,5 +1,6 @@
 package com.summer.context.xml;
 
+import com.summer.beans.exception.BeanNotFindException;
 import com.summer.common.logger.CommonLogger;
 import com.summer.core.resource.parse.ResourceReader;
 import org.dom4j.Document;
@@ -23,7 +24,9 @@ public class DefaultXmlContext extends AbstractXmlContext implements XmlContext 
     public DefaultXmlContext () {
     }
     public DefaultXmlContext (String filePath) {
+
         this.resourceReader = new ResourceReader(filePath);
+        onFresh();
     }
 
     @Override
@@ -53,4 +56,5 @@ public class DefaultXmlContext extends AbstractXmlContext implements XmlContext 
             int count = loadBeanDefinition(resourceReader);
         }
     }
+
 }

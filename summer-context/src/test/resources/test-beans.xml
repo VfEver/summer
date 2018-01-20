@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <beans>
-
-    <bean id="testBean" class="com.summer.core.resource.parse.ResourceReader">
-        <property name="test" value="123"></property>
-    </bean>
     <bean id="person" class="com.summer.context.entity.Person">
         <property name="name" value="zhaoyansheng"></property>
         <property name="age" value="24"></property>
