@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="528d2268-ec53-4014-be48-bcabec531e09" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="BeanDefinitionFactoryBridge.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="813">
-              <caret line="201" column="14" lean-forward="true" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
+            <state relative-caret-position="0">
+              <caret line="201" column="14" lean-forward="false" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,7 +41,7 @@
       <file leaf-file-name="AbstractXmlContext.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-context/src/main/java/com/summer/context/xml/AbstractXmlContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
+            <state relative-caret-position="810">
               <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
@@ -71,7 +71,7 @@
       <file leaf-file-name="DefaultXmlContext.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-context/src/main/java/com/summer/context/xml/DefaultXmlContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="846">
               <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
@@ -81,18 +81,18 @@
       <file leaf-file-name="AbstractBeanFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
+            <state relative-caret-position="720">
               <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultListableFactory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefaultListableFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="202" column="36" lean-forward="false" selection-start-line="202" selection-start-column="36" selection-end-line="202" selection-end-column="36" />
+            <state relative-caret-position="698">
+              <caret line="233" column="22" lean-forward="false" selection-start-line="233" selection-start-column="22" selection-end-line="233" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,24 +103,11 @@
       <file leaf-file-name="DefaultXmlContextTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-context/src/test/java/com/summer/context/xml/DefaultXmlContextTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="616">
+              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="108">
-                <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-                <folding />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -129,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/summer-context/src/test/resources/test-beans.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+              <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -226,9 +213,9 @@
         <option value="$PROJECT_DIR$/summer-context/src/test/java/com/summer/context/entity/Person.java" />
         <option value="$PROJECT_DIR$/summer-context/src/main/java/com/summer/context/xml/AbstractXmlContext.java" />
         <option value="$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java" />
-        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java" />
         <option value="$PROJECT_DIR$/summer-context/src/test/java/com/summer/context/xml/DefaultXmlContextTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java" />
       </list>
     </option>
   </component>
@@ -285,9 +272,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -634,7 +620,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -923,7 +910,8 @@
       <workItem from="1516375852207" duration="864000" />
       <workItem from="1516418570627" duration="6390000" />
       <workItem from="1516457908378" duration="29000" />
-      <workItem from="1516458038891" duration="5037000" />
+      <workItem from="1516458038891" duration="5157000" />
+      <workItem from="1516525700858" duration="2937000" />
     </task>
     <task id="LOCAL-00001" summary="【初始化项目结构】  --赵延升  2018年1月6日20:53:31&#10;init project structure.  --zys  2018年1月6日20:53:40">
       <created>1515243250845</created>
@@ -1072,7 +1060,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516463020459</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="implements IOC.  --zys  2018年1月20日23:45:13">
+      <created>1516463119449</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1516463119449</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1108,7 +1103,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104791000" />
+    <option name="totallyTimeSpent" value="107848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1116,19 +1111,17 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330076" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995657" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15260416" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2942454" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2942454" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26927084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1139,6 +1132,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330076" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1173,7 +1168,8 @@
     <MESSAGE value="implement parse xml.  --zys  2018年1月18日23:57:41" />
     <MESSAGE value="add singleton bean.  --zys  2018年1月19日23:51:41" />
     <MESSAGE value="implements IOC.  --zys  2018年1月20日23:43:26" />
-    <option name="LAST_COMMIT_MESSAGE" value="implements IOC.  --zys  2018年1月20日23:43:26" />
+    <MESSAGE value="implements IOC.  --zys  2018年1月20日23:45:13" />
+    <option name="LAST_COMMIT_MESSAGE" value="implements IOC.  --zys  2018年1月20日23:45:13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1504,7 +1500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="32" column="69" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1603,14 +1598,14 @@
     <entry file="file://$PROJECT_DIR$/summer-context/src/test/resources/test-beans.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+          <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/summer-context/src/main/java/com/summer/context/xml/AbstractXmlContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
+        <state relative-caret-position="810">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
@@ -1618,18 +1613,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="813">
-          <caret line="201" column="14" lean-forward="true" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="202" column="36" lean-forward="false" selection-start-line="202" selection-start-column="36" selection-end-line="202" selection-end-column="36" />
+        <state relative-caret-position="0">
+          <caret line="201" column="14" lean-forward="false" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1638,7 +1623,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
+        <state relative-caret-position="720">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
@@ -1646,7 +1631,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/summer-context/src/main/java/com/summer/context/xml/DefaultXmlContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="846">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
@@ -1668,24 +1653,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="108">
+            <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/summer-context/src/test/java/com/summer/context/xml/DefaultXmlContextTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="616">
+          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="108">
-            <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="698">
+          <caret line="233" column="22" lean-forward="false" selection-start-line="233" selection-start-column="22" selection-end-line="233" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

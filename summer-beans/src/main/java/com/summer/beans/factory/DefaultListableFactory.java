@@ -229,6 +229,11 @@ public class DefaultListableFactory extends AbstractBeanFactory {
                 break;
             }
 
+            case "Char" : case "char" : {
+                result = value.toCharArray();
+                break;
+            }
+
             default: {
                 break;
             }
