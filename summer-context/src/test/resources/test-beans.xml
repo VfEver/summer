@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <beans>
+
+    <bean id="dad" class="com.summer.context.entity.Dad">
+        <property name="name" value="zhaoyishen"></property>
+    </bean>
+
     <bean id="person" class="com.summer.context.entity.Person">
         <property name="name" value="zhaoyansheng"></property>
         <property name="age" value="24"></property>
+        <property name="dad" ref="dad"></property>
     </bean>
 </beans>

@@ -235,6 +235,8 @@ public class DefaultListableFactory extends AbstractBeanFactory {
             }
 
             default: {
+                //default is an object need to get
+                result = getBean(value);
                 break;
             }
         }

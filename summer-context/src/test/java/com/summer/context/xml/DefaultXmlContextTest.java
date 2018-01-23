@@ -25,6 +25,7 @@ public class DefaultXmlContextTest extends TestCase{
 
     }
 
+    @Test
     public void testPerson () throws Exception {
 
         Class clazz = Class.forName("com.summer.context.entity.Person");
@@ -42,6 +43,15 @@ public class DefaultXmlContextTest extends TestCase{
         ageField.set(person, age);
         AnnotatedType type1 = ageField.getAnnotatedType();
         System.out.println(type1.getType().getTypeName());
+        System.out.println(person.toString());
+    }
+
+    @Test
+    public void testRef () {
+
+        String filePath = "src/test/resources/test-beans.xml";
+        DefaultXmlContext context = new DefaultXmlContext(filePath);
+        Person person = (Person) context.getBean("person");
         System.out.println(person.toString());
     }
 }

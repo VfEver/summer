@@ -2,9 +2,11 @@ package com.summer.core.resource.parse;
 
 import com.summer.beans.bean.BeanDefinition;
 import com.summer.beans.enums.BeanScopeEnum;
+import com.summer.beans.exception.SymbolNotDefinedException;
 import com.summer.beans.factory.DefaultListableFactory;
 import com.summer.common.support.Assert;
 import com.summer.common.utils.ClassUtils;
+import com.summer.common.utils.StringUtils;
 import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.Element;
@@ -28,6 +30,7 @@ public class BeanDefinitionFactoryBridge {
     private final static String IMPORT = "import";
     private final static String CLASS = "class";
     private final static String SCOPE = "scope";
+    private final static String REF = "ref";
 
     private static DefaultListableFactory beanFactory;
 
@@ -88,7 +91,8 @@ public class BeanDefinitionFactoryBridge {
             }
             default: {
 
-                break;
+                String errorMsg = "the symbol - " + element.getName() + "can not be parse,please make sure has the correct spelling.";
+                throw new SymbolNotDefinedException(errorMsg);
             }
         }
     }
@@ -139,7 +143,8 @@ public class BeanDefinitionFactoryBridge {
                 }
                 default: {
 
-                    break;
+                    String errorMsg = "the symbol - " + element.getName() + "can not be parse,please make sure has the correct spelling.";
+                    throw new SymbolNotDefinedException(errorMsg);
                 }
             }
         }
@@ -195,10 +200,20 @@ public class BeanDefinitionFactoryBridge {
 
         String name = element.attributeValue(NAME);
         String value = element.attributeValue(VALUE);
-        //TODO ref should be added
-        Assert.hasText(name, "the bean's property name must not be empty.");
-        Assert.hasText(value, "the bean's property value must not be empty.");
+        String refObj = element.attributeValue(REF);
 
-        beanDefinition.addProperties(name, value);
+        Assert.hasText(name, "the bean's property name must not be empty.");
+        if (StringUtils.isEmpty(value) && StringUtils.isEmpty(refObj)) {
+
+            Assert.hasText("", "the bean's property value or ref must not be empty.");
+        }
+
+        if (StringUtils.isNotEmpty(value)) {
+
+            beanDefinition.addProperties(name, value);
+        } else {
+
+            beanDefinition.addProperties(name, refObj);
+        }
     }
 }
