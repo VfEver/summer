@@ -7,6 +7,7 @@ import org.dom4j.Document;
 import org.slf4j.Logger;
 
 import java.io.IOException;
+import java.net.URL;
 
 public class DefaultXmlContext extends AbstractXmlContext implements XmlContext {
 
@@ -25,7 +26,10 @@ public class DefaultXmlContext extends AbstractXmlContext implements XmlContext 
     }
     public DefaultXmlContext (String filePath) {
 
-        this.resourceReader = new ResourceReader(filePath);
+        //todo class path xml should do this.
+        URL url = this.getClass().getClassLoader().getResource(filePath);
+        String realFilePath = url.getPath();
+        this.resourceReader = new ResourceReader(realFilePath);
         onFresh();
     }
 

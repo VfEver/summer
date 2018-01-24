@@ -4,8 +4,10 @@ import com.summer.context.entity.Person;
 import junit.framework.TestCase;
 import org.junit.Test;
 
+import java.io.File;
 import java.lang.reflect.AnnotatedType;
 import java.lang.reflect.Field;
+import java.net.URL;
 
 /**
  * defaultXmlContext class test
@@ -49,9 +51,23 @@ public class DefaultXmlContextTest extends TestCase{
     @Test
     public void testRef () {
 
-        String filePath = "src/test/resources/test-beans.xml";
+        String filePath = "test-beans.xml";
         DefaultXmlContext context = new DefaultXmlContext(filePath);
         Person person = (Person) context.getBean("person");
         System.out.println(person.toString());
+    }
+
+    @Test
+    public void testClassPath () {
+
+        System.out.println(Thread.currentThread().getContextClassLoader().getResource(""));
+        String filePath = "src/test/resources/test-beans.xml";
+        File file = new File(filePath);
+        System.out.println(file.getAbsolutePath());
+
+        URL url = this.getClass().getClassLoader().getResource("test-beans.xml");
+        url.getPath();
+        System.out.println(url.getPath());
+        System.out.println(this.getClass().getClassLoader().getResource("test-beans.xml"));
     }
 }
