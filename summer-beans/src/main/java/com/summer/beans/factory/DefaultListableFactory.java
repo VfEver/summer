@@ -230,7 +230,7 @@ public class DefaultListableFactory extends AbstractBeanFactory {
             }
 
             case "Char" : case "char" : {
-                result = value.toCharArray();
+                result = value.toCharArray()[0];
                 break;
             }
 
