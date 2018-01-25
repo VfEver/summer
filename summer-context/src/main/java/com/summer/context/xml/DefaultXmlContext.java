@@ -23,13 +23,12 @@ public class DefaultXmlContext extends AbstractXmlContext implements XmlContext 
     }
 
     public DefaultXmlContext () {
+
+        onFresh();
     }
     public DefaultXmlContext (String filePath) {
 
-        //todo class path xml should do this.
-        URL url = this.getClass().getClassLoader().getResource(filePath);
-        String realFilePath = url.getPath();
-        this.resourceReader = new ResourceReader(realFilePath);
+        this.resourceReader = new ResourceReader(filePath);
         onFresh();
     }
 
