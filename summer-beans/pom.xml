@@ -9,6 +9,7 @@
 
     <artifactId>beans</artifactId>
     <packaging>jar</packaging>
+    <version>1.0.0-SNAPSHOT</version>
 
     <name>beans</name>
     <url>http://maven.apache.org</url>
@@ -22,6 +23,11 @@
             <groupId>com.summer</groupId>
             <artifactId>common</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
         </dependency>
     </dependencies>
 </project>
