@@ -9,5 +9,5 @@ import com.summer.aop.pointcut.DefaultPoincut;
  */
 public interface Advice {
 
-    DefaultPoincut getPointcut();
+    Object getAdvicor();
 }

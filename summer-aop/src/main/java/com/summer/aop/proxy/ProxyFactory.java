@@ -8,4 +8,22 @@ package com.summer.aop.proxy;
  */
 public class ProxyFactory {
 
+    /**
+     * create the proper proxy.
+     * has implemented interfaces,use jdk dynamic proxy,
+     * else use cglib proxy.
+     * @param object
+     * @return
+     */
+    public static Proxy createProxy(Object object) {
+
+        Class[] interfaces = object.getClass().getInterfaces();
+        if (interfaces == null || interfaces.length <= 0) {
+
+            return new JdkProxy(object);
+        } else {
+
+            return new Cglibproxy();
+        }
+    }
 }
