@@ -1,8 +1,10 @@
 package com.summer.aop.weave;
 
+import com.summer.aop.advice.DefaultAdvice;
 import com.summer.aop.aspect.Aspect;
 import com.summer.aop.aspect.DefaultAspect;
 import com.summer.aop.pointcut.DefaultPoincut;
+import com.summer.aop.proxy.Proxy;
 import com.summer.aop.proxy.ProxyFactory;
 import com.summer.beans.beanpost.BeanPostProcessor;
 import com.summer.beans.exception.BeanException;
@@ -38,7 +40,9 @@ public class AopWeaveBean implements BeanFactoryAware, BeanPostProcessor {
 
             if (defaultAspect.matchClass(className)) {
 
-                returnObj = ProxyFactory.createProxy(bean);
+                DefaultAdvice defaultAdvice = (DefaultAdvice) aspect.getAdvice();
+                returnObj = ProxyFactory.createProxy(returnObj, aspect).getProxyObj();
+
             }
         }
         return returnObj;

@@ -6,4 +6,6 @@ package com.summer.aop.proxy;
  * @date 2018/03/10
  */
 public interface Proxy {
+
+    Object getProxyObj();
 }

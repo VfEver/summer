@@ -1,5 +1,7 @@
 package com.summer.aop.proxy;
 
+import com.summer.aop.aspect.Aspect;
+
 /**
  * a factory can create proxy class depends on
  * class attributes which would be created.
@@ -15,12 +17,12 @@ public class ProxyFactory {
      * @param object
      * @return
      */
-    public static Proxy createProxy(Object object) {
+    public static Proxy createProxy(Object object, Aspect aspect) {
 
         Class[] interfaces = object.getClass().getInterfaces();
         if (interfaces == null || interfaces.length <= 0) {
 
-            return new JdkProxy(object);
+            return new JdkProxy(object, aspect);
         } else {
 
             return new Cglibproxy();
