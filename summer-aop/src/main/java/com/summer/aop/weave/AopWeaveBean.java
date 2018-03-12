@@ -1,15 +1,13 @@
 package com.summer.aop.weave;
 
-import com.summer.aop.advice.DefaultAdvice;
 import com.summer.aop.aspect.Aspect;
-import com.summer.aop.aspect.DefaultAspect;
-import com.summer.aop.pointcut.DefaultPoincut;
-import com.summer.aop.proxy.Proxy;
+import com.summer.aop.pointcut.DefaultPointcut;
 import com.summer.aop.proxy.ProxyFactory;
 import com.summer.beans.beanpost.BeanPostProcessor;
 import com.summer.beans.exception.BeanException;
 import com.summer.beans.factory.BeanFactory;
 import com.summer.beans.factory.BeanFactoryAware;
+import com.summer.beans.factory.DefaultListableFactory;
 
 import java.util.List;
 
@@ -35,14 +33,12 @@ public class AopWeaveBean implements BeanFactoryAware, BeanPostProcessor {
         List<Aspect> aspects = getAspects();
         for (Aspect aspect : aspects) {
 
-            DefaultPoincut defaultAspect = (DefaultPoincut) aspect.getPointcut();
+            DefaultPointcut defaultAspect = (DefaultPointcut) aspect.getPointcut();
             String className = bean.getClass().getName();
 
             if (defaultAspect.matchClass(className)) {
 
-                DefaultAdvice defaultAdvice = (DefaultAdvice) aspect.getAdvice();
                 returnObj = ProxyFactory.createProxy(returnObj, aspect).getProxyObj();
-
             }
         }
         return returnObj;
@@ -56,7 +52,8 @@ public class AopWeaveBean implements BeanFactoryAware, BeanPostProcessor {
 
     private List<Aspect> getAspects () {
 
-
+        DefaultListableFactory defaultListableFactory = (DefaultListableFactory) beanFactory;
+        
         return null;
     }
 }

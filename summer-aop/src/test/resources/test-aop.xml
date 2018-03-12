@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans>
+
+    <bean id="logger" class="com.summer.aop.advice.LogAdvicor"></bean>
+    <aop-config>
+        <aop-pointcut expression="com.summer.aop.pointcut.Dad#sayHello" id="dad"/>
+        <aop-aspect id="logAspect" ref="logger">
+            <aop-before method="before"  pointcut-ref="dad"/>
+        </aop-aspect>
+    </aop-config>
+
+</beans>

@@ -1,9 +1,8 @@
 package com.summer.aop.proxy;
 
-import com.summer.aop.advice.Advice;
 import com.summer.aop.advice.DefaultAdvice;
 import com.summer.aop.aspect.Aspect;
-import com.summer.aop.pointcut.DefaultPoincut;
+import com.summer.aop.pointcut.DefaultPointcut;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -28,9 +27,9 @@ public class JdkProxy implements Proxy, InvocationHandler{
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
         String methodName = method.getName();
-        DefaultPoincut poincut = (DefaultPoincut) aspect.getPointcut();
+        DefaultPointcut pointcut = (DefaultPointcut) aspect.getPointcut();
 
-        if (poincut.matchMethod(methodName)) {
+        if (pointcut.matchMethod(methodName)) {
 
             Object advicor = (DefaultAdvice) aspect.getAdvice().getAdvicor();
 

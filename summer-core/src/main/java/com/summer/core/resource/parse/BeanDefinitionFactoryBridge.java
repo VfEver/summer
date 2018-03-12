@@ -1,5 +1,11 @@
 package com.summer.core.resource.parse;
 
+import com.summer.aop.advice.Advice;
+import com.summer.aop.advice.DefaultAdvice;
+import com.summer.aop.aspect.Aspect;
+import com.summer.aop.aspect.DefaultAspect;
+import com.summer.aop.pointcut.DefaultPointcut;
+import com.summer.aop.pointcut.Pointcut;
 import com.summer.beans.bean.BeanDefinition;
 import com.summer.beans.enums.BeanScopeEnum;
 import com.summer.beans.exception.SymbolNotDefinedException;
@@ -31,7 +37,14 @@ public class BeanDefinitionFactoryBridge {
     private final static String CLASS = "class";
     private final static String SCOPE = "scope";
     private final static String REF = "ref";
-
+    private final static String AOP_CONFIG = "aop-config";
+    private final static String AOP_POINTCUT = "aop-pointcut";
+    private final static String AOP_ASPECT = "aop-aspect";
+    private final static String AOP_BEFORE = "aop-before";
+    private final static String AOP_AFTER = "aop-after";
+    private final static String METHOD = "method";
+    private final static String POINTCUT_REF = "pointcut_ref";
+    private final static String EXPRESSION = "expression";
     private static DefaultListableFactory beanFactory;
 
     public BeanDefinitionFactoryBridge () {
@@ -87,6 +100,12 @@ public class BeanDefinitionFactoryBridge {
 
             case IMPORT : {
 
+                break;
+            }
+
+            case AOP_CONFIG : {
+
+                initAspect(element);
                 break;
             }
             default: {
@@ -215,5 +234,46 @@ public class BeanDefinitionFactoryBridge {
 
             beanDefinition.addProperties(name, refObj);
         }
+    }
+
+    private void initAspect (Element element) {
+
+        Iterator<Element> iterator = element.elementIterator();
+        DefaultAspect aspect = new DefaultAspect();
+
+        while (iterator.hasNext()) {
+
+            Element childNode = iterator.next();
+            String elementName = childNode.getName();
+
+            switch (elementName) {
+
+                case AOP_POINTCUT : {
+
+                    DefaultPointcut pointcut = new DefaultPointcut();
+                    String expression = childNode.attributeValue(EXPRESSION);
+                    pointcut.setExpression(expression);
+                    String poiontcutName = childNode.attributeValue(ID);
+                    pointcut.setPointcutName(poiontcutName);
+                    aspect.setPointcut(pointcut);
+                }
+
+                case AOP_ASPECT : {
+
+                    Advice advice = initAdvicor(childNode);
+                    aspect.setAdvice(advice);
+                }
+            }
+        }
+    }
+
+    private Advice initAdvicor(Element element) {
+
+        DefaultAdvice advice = new DefaultAdvice();
+        String advicorName = element.attributeValue(ID);
+        String advicorObject = element.attributeValue(REF);
+        advice.setAdvicor(advicorObject);
+        advice.setAdvicorName(advicorName);
+        return advice;
     }
 }

@@ -1,5 +1,6 @@
 package com.summer.beans.factory;
 
+import com.summer.aop.aspect.Aspect;
 import com.summer.beans.bean.BeanDefinition;
 import com.summer.beans.enums.BeanScopeEnum;
 import com.summer.beans.exception.BeanNotFindException;
@@ -10,7 +11,9 @@ import com.sun.istack.internal.Nullable;
 import org.slf4j.Logger;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -27,6 +30,11 @@ public class DefaultListableFactory extends AbstractBeanFactory {
      * bean name -> attribute
      */
     private Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>(32);
+
+    /**
+     * aspect list
+     */
+    private List<Aspect> aspects = new ArrayList<>(4);
 
     public DefaultListableFactory () {
 
@@ -254,6 +262,10 @@ public class DefaultListableFactory extends AbstractBeanFactory {
 
             this.beanDefinitionMap.clear();
         }
+    }
+
+    public void addAspcet (Aspect aspect) {
+        aspects.add(aspect);
     }
 
 }

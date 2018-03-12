@@ -1,5 +1,8 @@
 package com.summer.aop.advice;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * default advicor
  * @author zys
@@ -8,11 +11,12 @@ package com.summer.aop.advice;
 public class DefaultAdvice implements Advice {
 
     private Object advicor;
+    private String advicorName;
+    Map<String, String> methodInterceptor = new HashMap<>(4);
 
-    public DefaultAdvice(Object advicor) {
-
-        this.advicor = advicor;
+    public DefaultAdvice () {
     }
+
 
     public void setAdvicor(Object advicor) {
         this.advicor = advicor;
@@ -21,5 +25,13 @@ public class DefaultAdvice implements Advice {
     @Override
     public Object getAdvicor() {
         return null;
+    }
+
+    public String getAdvicorName() {
+        return advicorName;
+    }
+
+    public void setAdvicorName(String advicorName) {
+        this.advicorName = advicorName;
     }
 }

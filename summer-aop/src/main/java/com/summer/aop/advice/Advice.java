@@ -1,7 +1,5 @@
 package com.summer.aop.advice;
 
-import com.summer.aop.pointcut.DefaultPoincut;
-
 /**
  * advice
  * @author zys

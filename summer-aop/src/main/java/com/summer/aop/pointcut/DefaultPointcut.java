@@ -5,7 +5,7 @@ package com.summer.aop.pointcut;
  * @author zys
  * @date 2018/03/07
  */
-public class DefaultPoincut implements ClassMatcher, MethodMatcher, Pointcut {
+public class DefaultPointcut implements ClassMatcher, MethodMatcher, Pointcut {
     /**
      * pointcut name
      */
