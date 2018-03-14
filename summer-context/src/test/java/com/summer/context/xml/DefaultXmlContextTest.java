@@ -1,5 +1,7 @@
 package com.summer.context.xml;
 
+import com.summer.context.entity.AopInterface;
+import com.summer.context.entity.Dad;
 import com.summer.context.entity.Person;
 import junit.framework.TestCase;
 import org.junit.Test;
@@ -69,5 +71,14 @@ public class DefaultXmlContextTest extends TestCase{
         url.getPath();
         System.out.println(url.getPath());
         System.out.println(this.getClass().getClassLoader().getResource("test-beans.xml"));
+    }
+
+    @Test
+    public void testAop () {
+
+        String filePath = "src/test/resources/test-aop.xml";
+        DefaultXmlContext context = new DefaultXmlContext(filePath);
+        AopInterface dad = (AopInterface) context.getBean("dad");
+        dad.say();
     }
 }

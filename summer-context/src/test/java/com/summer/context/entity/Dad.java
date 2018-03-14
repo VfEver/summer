@@ -5,7 +5,7 @@ package com.summer.context.entity;
  * @author zys
  * @date 2018年1月23日22:42:19
  */
-public class Dad {
+public class Dad implements AopInterface {
 
     private String name;
 
@@ -17,6 +17,7 @@ public class Dad {
         this.name = name;
     }
 
+    @Override
     public void say () {
         System.out.println("hello " + name);
     }

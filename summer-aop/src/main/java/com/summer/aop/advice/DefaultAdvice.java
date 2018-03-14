@@ -26,7 +26,7 @@ public class DefaultAdvice implements Advice {
 
     @Override
     public Object getAdvicor() {
-        return null;
+        return advicor;
     }
 
     public String getAdvicorName() {

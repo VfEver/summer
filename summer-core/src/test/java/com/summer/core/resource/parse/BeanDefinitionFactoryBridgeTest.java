@@ -53,4 +53,8 @@ public class BeanDefinitionFactoryBridgeTest extends TestCase{
         BeanFactory beanFactory = factory;
         System.out.println("-----------");
     }
+
+    public void testAop () {
+
+    }
 }

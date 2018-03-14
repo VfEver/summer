@@ -33,7 +33,7 @@ public class JdkProxy implements Proxy, InvocationHandler{
         DefaultPointcut pointcut = (DefaultPointcut) aspect.getPointcut();
         if (pointcut.matchMethod(methodName)) {
 
-            Object advicor = (DefaultAdvice) aspect.getAdvice().getAdvicor();
+            Object advicor = ((DefaultAdvice) aspect.getAdvice()).getAdvicor();
             DefaultAdvice advice = (DefaultAdvice) aspect.getAdvice();
             for (Map.Entry<String, String> entry : advice.getBeforeMethodInterceptor().entrySet()) {
 
@@ -56,6 +56,8 @@ public class JdkProxy implements Proxy, InvocationHandler{
     @Override
     public Object getProxyObj() {
 
-        return java.lang.reflect.Proxy.newProxyInstance(getClass().getClassLoader(), target.getClass().getInterfaces(), this);
+        Object res = java.lang.reflect.Proxy.newProxyInstance(getClass().getClassLoader(), target.getClass().getInterfaces(), this);
+
+        return res;
     }
 }
