@@ -1,4 +1,4 @@
-package com.summer.aop.aspect;
+package com.summer.core.resource.aspect;
 
 import com.summer.core.resource.io.DefaultResource;
 import com.summer.core.resource.parse.ResourceReader;

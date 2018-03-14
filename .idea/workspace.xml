@@ -4,26 +4,24 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="528d2268-ec53-4014-be48-bcabec531e09" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_15_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_16_0_1.xml" afterPath="" />
+    <list default="true" id="528d2268-ec53-4014-be48-bcabec531e09" name="Default" comment="aop change 80%.  --zys  2018年3月12日23:52:10">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/summer-aop/src/test/java/com/summer/aop/aspect/AspectTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/summer-aop/src/test/resources/test-aop.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-aop/pom.xml" afterPath="$PROJECT_DIR$/summer-aop/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/advice/Advice.java" afterPath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/advice/Advice.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/advice/DefaultAdvice.java" afterPath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/advice/DefaultAdvice.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/Cglibproxy.java" afterPath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/Cglibproxy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/JdkProxy.java" afterPath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/JdkProxy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/weave/AopWeaveBean.java" afterPath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/weave/AopWeaveBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/ProxyFactory.java" afterPath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/ProxyFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-aop/summer-aop.iml" afterPath="$PROJECT_DIR$/summer-aop/summer-aop.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/pom.xml" afterPath="$PROJECT_DIR$/summer-beans/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-beans/summer-beans.iml" afterPath="$PROJECT_DIR$/summer-beans/summer-beans.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-context/summer-context.iml" afterPath="$PROJECT_DIR$/summer-context/summer-context.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-core/pom.xml" afterPath="$PROJECT_DIR$/summer-core/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java" afterPath="$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java" afterPath="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer-core/summer-core.iml" afterPath="$PROJECT_DIR$/summer-core/summer-core.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/pointcut/DefaultPoincut.java" afterPath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/pointcut/DefaultPointcut.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summer.iml" afterPath="$PROJECT_DIR$/summer.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/weave/AopWeaveBean.java" afterPath="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/weave/AopWeaveBean.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,67 +41,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JdkProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/JdkProxy.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer-core/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="558">
+              <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-aop/pom.xml">
+      <file leaf-file-name="BeanDefinitionFactoryBridge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="2178">
+              <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeanDefinitionFactoryBridgeTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="738">
+              <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AopWeaveBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/weave/AopWeaveBean.java">
+        <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/weave/AopWeaveBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="634">
+              <caret line="48" column="46" lean-forward="true" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultListableFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java">
+      <file leaf-file-name="ProxyFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/ProxyFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="267" column="28" lean-forward="false" selection-start-line="267" selection-start-column="28" selection-end-line="267" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#8110#8111#0" expanded="true" />
-                <element signature="e#8145#8146#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test-aop.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-aop/src/test/resources/test-aop.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+            <state relative-caret-position="486">
+              <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanDefinitionFactoryBridge.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java">
+      <file leaf-file-name="JdkProxy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/JdkProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="275" column="43" lean-forward="true" selection-start-line="275" selection-start-column="43" selection-end-line="275" selection-end-column="43" />
+            <state relative-caret-position="648">
+              <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultPointcut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/pointcut/DefaultPointcut.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -112,36 +117,40 @@
       <file leaf-file-name="DefaultAdvice.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/advice/DefaultAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+            <state relative-caret-position="274">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#580#581#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#1135#1136#0" expanded="true" />
+                <element signature="e#1181#1182#0" expanded="true" />
+                <element signature="e#1243#1244#0" expanded="true" />
+                <element signature="e#1288#1289#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-beans/pom.xml">
+      <file leaf-file-name="DefaultListableFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="568">
+              <caret line="156" column="46" lean-forward="false" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="46" />
+              <folding>
+                <element signature="e#8548#8549#0" expanded="true" />
+                <element signature="e#8583#8584#0" expanded="true" />
+                <element signature="e#8624#8625#0" expanded="true" />
+                <element signature="e#8654#8655#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Advice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/advice/Advice.java">
+      <file leaf-file-name="AspectTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/aspect/AspectTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -179,6 +188,8 @@
       <find>Set&lt;String&gt;</find>
       <find>attributes</find>
       <find>elementIterator</find>
+      <find>slf4j-api</find>
+      <find>doget</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,15 +204,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/AbstractBeanDefinition.java" />
-        <option value="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/io/TestResourceReader.java" />
-        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/bean/BeanDefinition.java" />
-        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/enums/BeanScopeEnum.java" />
-        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/AbstractBeanFactory.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultSingletonRegistry.java" />
         <option value="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/entity/Person.java" />
         <option value="$PROJECT_DIR$/summer-core/src/test/resources/test-beans.xml" />
-        <option value="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/exception/BeanNotFindException.java" />
         <option value="$PROJECT_DIR$/summer-context/src/main/java/com/summer/context/xml/AbstractXmlContext.java" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -226,24 +231,30 @@
         <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/aspect/Aspect.java" />
         <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/aspect/DefaultAspect.java" />
         <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/Proxy.java" />
-        <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/ProxyFactory.java" />
         <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/pointcut/DefaultPoincut.java" />
         <option value="$PROJECT_DIR$/summer-aop/src/test/resources/test-beans.xml" />
         <option value="$PROJECT_DIR$/summer-aop/src/test/java/com/summer/aop/advice/LogAdvicor.java" />
         <option value="$PROJECT_DIR$/summer-aop/src/test/java/com/summer/aop/pointcut/Dad.java" />
         <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/advice/Advice.java" />
-        <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/JdkProxy.java" />
         <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/Cglibproxy.java" />
-        <option value="$PROJECT_DIR$/summer-aop/src/test/java/com/summer/aop/aspect/AspectTest.java" />
         <option value="$PROJECT_DIR$/summer-aop/src/test/resources/test-aop.xml" />
+        <option value="$PROJECT_DIR$/summer-beans/pom.xml" />
+        <option value="$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java" />
+        <option value="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java" />
         <option value="$PROJECT_DIR$/summer-core/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/weave/AopWeaveBean.java" />
-        <option value="$PROJECT_DIR$/summer-beans/pom.xml" />
         <option value="$PROJECT_DIR$/summer-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/aspect/AspectTest.java" />
+        <option value="$PROJECT_DIR$/summer-aop/src/test/java/com/summer/aop/aspect/AspectTest.java" />
+        <option value="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/entity/Dad.java" />
+        <option value="$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/entity/LogAdvicor.java" />
+        <option value="$PROJECT_DIR$/summer-core/src/test/resources/test-aop.xml" />
+        <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/ProxyFactory.java" />
+        <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/weave/AopWeaveBean.java" />
         <option value="$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java" />
-        <option value="$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java" />
         <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/advice/DefaultAdvice.java" />
+        <option value="$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/JdkProxy.java" />
       </list>
     </option>
   </component>
@@ -273,26 +284,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="aop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="aop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="summer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="summer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -320,6 +312,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -380,16 +373,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="aop" type="462c0819:PsiDirectoryNode" />
-              <item name="aspect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
               <item name="pointcut" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -405,16 +388,6 @@
             <path>
               <item name="summer" type="b2602c69:ProjectViewProjectNode" />
               <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-              <item name="weave" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
               <item name="summer-beans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -446,16 +419,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="beans" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-beans" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="summer" type="b2602c69:ProjectViewProjectNode" />
@@ -470,67 +433,32 @@
             <path>
               <item name="summer" type="b2602c69:ProjectViewProjectNode" />
               <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-common" type="462c0819:PsiDirectoryNode" />
+              <item name="summer-beans" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="weave" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="summer" type="b2602c69:ProjectViewProjectNode" />
               <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-common" type="462c0819:PsiDirectoryNode" />
+              <item name="summer-beans" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="summer" type="462c0819:PsiDirectoryNode" />
+              <item name="summer-beans" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="summer" type="b2602c69:ProjectViewProjectNode" />
               <item name="summer" type="462c0819:PsiDirectoryNode" />
               <item name="summer-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="logger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="summer" type="b2602c69:ProjectViewProjectNode" />
@@ -618,29 +546,7 @@
               <item name="summer-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="parse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="summer" type="b2602c69:ProjectViewProjectNode" />
@@ -685,7 +591,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="summer" type="462c0819:PsiDirectoryNode" />
               <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="aspect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="summer" type="b2602c69:ProjectViewProjectNode" />
@@ -693,15 +599,7 @@
               <item name="summer-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="parse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="summer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="summer-test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -709,7 +607,6 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -723,17 +620,27 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\summer\summer-aop\src\test\resources" />
-      <recent name="D:\summer\summer-context\src\test\resources" />
-      <recent name="D:\summer\summer-common\src\main\java\com\summer" />
-      <recent name="D:\summer\summer-core\src\test\resources" />
-      <recent name="D:\summer\summer-core\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\summer\summer-core\src\test\resources" />
       <recent name="D:\summer\summer-tests\src\main\resources" />
       <recent name="D:\summer\summer-core\src\resource" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.summer.aop" />
+      <recent name="com.summer.advice" />
+      <recent name="com.summer" />
+      <recent name="com.summer.core.resource" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.summer.core.resource.entity" />
+      <recent name="com.summer.core.resource.aspect" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\summer\summer-core\src\test\resources" />
+      <recent name="D:\summer\summer-aop\src\test\resources" />
+      <recent name="D:\summer\summer-context\src\test\resources" />
+      <recent name="D:\summer\summer-common\src\main\java\com\summer" />
+      <recent name="D:\summer\summer-core\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -748,7 +655,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AspectTest.testReadXml">
+  <component name="RunManager" selected="JUnit.BeanDefinitionFactoryBridgeTest.testAopRead">
     <configuration name="AspectTest.testReadXml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -762,6 +669,31 @@
       <option name="PACKAGE_NAME" value="com.summer.aop.aspect" />
       <option name="MAIN_CLASS_NAME" value="com.summer.aop.aspect.AspectTest" />
       <option name="METHOD_NAME" value="testReadXml" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="BeanDefinitionFactoryBridgeTest.testAopRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.summer.core.resource.parse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="summer-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.summer.core.resource.parse" />
+      <option name="MAIN_CLASS_NAME" value="com.summer.core.resource.parse.BeanDefinitionFactoryBridgeTest" />
+      <option name="METHOD_NAME" value="testAopRead" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -812,31 +744,6 @@
       <option name="PACKAGE_NAME" value="com.summer.context.xml" />
       <option name="MAIN_CLASS_NAME" value="com.summer.context.xml.DefaultXmlContextTest" />
       <option name="METHOD_NAME" value="testClassPath" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="DefaultXmlContextTest.testOnFresh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.summer.context.xml.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="summer-context" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.summer.context.xml" />
-      <option name="MAIN_CLASS_NAME" value="com.summer.context.xml.DefaultXmlContextTest" />
-      <option name="METHOD_NAME" value="testOnFresh" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -955,19 +862,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultXmlContextTest.testOnFresh" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultXmlContextTest.testRef" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultXmlContextTest.testClassPath" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ClassPathXmlApplicationContextTest.testClassPathXml" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AspectTest.testReadXml" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultXmlContextTest.testRef" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultXmlContextTest.testClassPath" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ClassPathXmlApplicationContextTest.testClassPathXml" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AspectTest.testReadXml" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BeanDefinitionFactoryBridgeTest.testAopRead" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AspectTest.testReadXml" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ClassPathXmlApplicationContextTest.testClassPathXml" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultXmlContextTest.testRef" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultXmlContextTest.testClassPath" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultXmlContextTest.testOnFresh" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BeanDefinitionFactoryBridgeTest.testAopRead" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AspectTest.testReadXml" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ClassPathXmlApplicationContextTest.testClassPathXml" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultXmlContextTest.testRef" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultXmlContextTest.testClassPath" />
       </list>
     </recent_temporary>
   </component>
@@ -1007,7 +914,14 @@
       <workItem from="1520427844970" duration="8157000" />
       <workItem from="1520643697815" duration="20920000" />
       <workItem from="1520768007134" duration="6147000" />
-      <workItem from="1520863598026" duration="6310000" />
+      <workItem from="1520863598026" duration="6994000" />
+      <workItem from="1520951490641" duration="1855000" />
+      <workItem from="1520953524331" duration="143000" />
+      <workItem from="1520953833705" duration="132000" />
+      <workItem from="1520954122906" duration="103000" />
+      <workItem from="1520954371853" duration="831000" />
+      <workItem from="1521035867741" duration="2862000" />
+      <workItem from="1521039017033" duration="5352000" />
     </task>
     <task id="LOCAL-00001" summary="【初始化项目结构】  --赵延升  2018年1月6日20:53:31&#10;init project structure.  --zys  2018年1月6日20:53:40">
       <created>1515243250845</created>
@@ -1233,18 +1147,25 @@
       <option name="project" value="LOCAL" />
       <updated>1520696245522</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="aop change 80%.  --zys  2018年3月12日23:52:10">
+      <created>1520869944269</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1520869944270</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AspectTest_testReadXml - 2018.03.11 at 21h 28m 58s.xml">
-      <configuration name="AspectTest.testReadXml" configurationId="JUnit" />
+    <history-entry file="BeanDefinitionFactoryBridgeTest_testAopRead - 2018.03.14 at 22h 54m 24s.xml">
+      <configuration name="BeanDefinitionFactoryBridgeTest.testAopRead" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AspectTest_testReadXml - 2018.03.11 at 21h 29m 16s.xml">
-      <configuration name="AspectTest.testReadXml" configurationId="JUnit" />
+    <history-entry file="BeanDefinitionFactoryBridgeTest_testAopRead - 2018.03.14 at 23h 08m 36s.xml">
+      <configuration name="BeanDefinitionFactoryBridgeTest.testAopRead" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AspectTest_testReadXml - 2018.03.11 at 21h 34m 17s.xml">
-      <configuration name="AspectTest.testReadXml" configurationId="JUnit" />
+    <history-entry file="BeanDefinitionFactoryBridgeTest_testAopRead - 2018.03.14 at 23h 09m 40s.xml">
+      <configuration name="BeanDefinitionFactoryBridgeTest.testAopRead" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DefaultXmlContextTest_testClassPath - 2018.01.24 at 23h 40m 04s.xml">
       <configuration name="DefaultXmlContextTest.testClassPath" configurationId="JUnit" />
@@ -1269,7 +1190,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163257000" />
+    <option name="totallyTimeSpent" value="175219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1277,18 +1198,20 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330076" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995657" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15260416" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2942454" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2942454" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1299,11 +1222,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330076" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1313,7 +1234,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add common bean factory.  --zys  2018年1月8日23:07:39" />
     <MESSAGE value="implement the alias registry.  --zys  2018年1月9日23:29:27" />
     <MESSAGE value="add method to find canonical name.  --zys  2018年1月9日23:43:08" />
     <MESSAGE value="add summer context.  --zys  2018年1月10日23:45:11" />
@@ -1338,7 +1258,8 @@
     <MESSAGE value="begin to implement aop.  --zys  2018年3月7日23:20:07" />
     <MESSAGE value="aop 50%.  --zys  2018年3月10日20:58:17" />
     <MESSAGE value="aop change 50%.  --zys  2018年3月10日23:37:19" />
-    <option name="LAST_COMMIT_MESSAGE" value="aop change 50%.  --zys  2018年3月10日23:37:19" />
+    <MESSAGE value="aop change 80%.  --zys  2018年3月12日23:52:10" />
+    <option name="LAST_COMMIT_MESSAGE" value="aop change 80%.  --zys  2018年3月12日23:52:10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1355,82 +1276,18 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/exception/SymbolNotDefinedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/exception/BeanException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-context/src/main/java/com/summer/context/xml/ClassPathXmlApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#545#546#0" expanded="false" />
-            <element signature="e#568#569#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-context/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-context/src/test/java/com/summer/context/xml/ClassPathXmlApplicationContextTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-context/src/test/resources/test-beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-context/src/main/java/com/summer/context/xml/AbstractXmlContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-context/src/main/java/com/summer/context/xml/DefaultXmlContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/beanpost/BeanPostProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1449,13 +1306,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/beanpost/DefaultBeanPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1525,7 +1375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1548,26 +1397,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/pointcut/DefaultPointcut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/summer-aop/src/test/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-aop/src/test/java/com/summer/aop/pointcut/Dad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1578,14 +1412,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1631,10 +1457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1646,19 +1468,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-aop/src/test/java/com/summer/aop/advice/LogAdvicor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/SimpleAliasRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1666,7 +1479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1678,42 +1490,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/aspect/Aspect.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/com/sun/istack/internal/Nullable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="162">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-aop/src/test/resources/test-aop.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="1332">
+          <caret line="74" column="17" lean-forward="false" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/ProxyFactory.java">
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/beanpost/DefaultBeanPostProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+        <state relative-caret-position="108">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/com/sun/istack/internal/Nullable.class">
+    <entry file="file://$PROJECT_DIR$/summer-test/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1726,90 +1544,217 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-aop/src/test/java/com/summer/aop/aspect/AspectTest.java">
+    <entry file="file://$PROJECT_DIR$/summer-context/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="486">
+          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/JdkProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
+    <entry file="uml://MAVEN/com.summer:core:1.0.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.summer:core:1.0.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.summer:core:1.0.0-SNAPSHOT</node>
+            <node x="" y="">com.summer:common:jar:1.0-SNAPSHOT</node>
+            <node x="" y="">com.summer:beans:jar:1.0.0-SNAPSHOT</node>
+            <node x="" y="">com.summer:aop:jar:1.0.0-SNAPSHOT</node>
+            <node x="" y="">junit:junit:jar:4.11</node>
+            <node x="" y="">junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="" y="">org.apache.logging.log4j:log4j-api:jar:2.2</node>
+            <node x="" y="">org.apache.logging.log4j:log4j-core:jar:2.2</node>
+            <node x="" y="">org.apache.logging.log4j:log4j-slf4j-impl:jar:2.2</node>
+            <node x="" y="">org.apache.logging.log4j:log4j-slf4j-impl:jar:2.2/org.slf4j:slf4j-api:jar:1.7.7</node>
+            <node x="" y="">org.apache.logging.log4j:log4j-jcl:jar:2.2</node>
+            <node x="" y="">org.apache.logging.log4j:log4j-jcl:jar:2.2/commons-logging:commons-logging:jar:1.2</node>
+            <node x="" y="">org.slf4j:slf4j-api:jar:1.7.10</node>
+            <node x="" y="">dom4j:dom4j:jar:1.6.1</node>
+            <node x="" y="">dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="415.0" y="154.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/summer-aop/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="378">
+          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-aop/src/test/java/com/summer/aop/aspect/AspectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-aop/src/test/java/com/summer/aop/advice/LogAdvicor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-aop/src/test/java/com/summer/aop/pointcut/Dad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/entity/LogAdvicor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/entity/Dad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-core/src/test/resources/test-aop.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/aspect/AspectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-context/src/main/java/com/summer/context/xml/ClassPathXmlApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2178">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-core/src/test/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridgeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/factory/DefaultListableFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="267" column="28" lean-forward="false" selection-start-line="267" selection-start-column="28" selection-end-line="267" selection-end-column="28" />
+        <state relative-caret-position="568">
+          <caret line="156" column="46" lean-forward="false" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8110#8111#0" expanded="true" />
-            <element signature="e#8145#8146#0" expanded="true" />
+            <element signature="e#8548#8549#0" expanded="true" />
+            <element signature="e#8583#8584#0" expanded="true" />
+            <element signature="e#8624#8625#0" expanded="true" />
+            <element signature="e#8654#8655#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-beans/src/main/java/com/summer/beans/weave/AopWeaveBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="48" column="46" lean-forward="true" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+          <folding>
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/ProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/advice/Advice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="162">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/weave/AopWeaveBean.java">
+    <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/aspect/Aspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-aop/src/test/resources/test-aop.xml">
+    <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/pointcut/DefaultPointcut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        <state relative-caret-position="126">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/advice/DefaultAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+        <state relative-caret-position="274">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/summer-core/src/main/java/com/summer/core/resource/parse/BeanDefinitionFactoryBridge.java">
+    <entry file="file://$PROJECT_DIR$/summer-aop/src/main/java/com/summer/aop/proxy/JdkProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="275" column="43" lean-forward="true" selection-start-line="275" selection-start-column="43" selection-end-line="275" selection-end-column="43" />
+        <state relative-caret-position="648">
+          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
           <folding />
         </state>
       </provider>

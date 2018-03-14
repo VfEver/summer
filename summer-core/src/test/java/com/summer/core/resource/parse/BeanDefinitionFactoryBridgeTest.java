@@ -1,5 +1,6 @@
 package com.summer.core.resource.parse;
 
+import com.summer.beans.factory.BeanFactory;
 import com.summer.beans.factory.DefaultListableFactory;
 import com.summer.common.logger.CommonLogger;
 import com.summer.core.resource.io.DefaultResource;
@@ -40,5 +41,16 @@ public class BeanDefinitionFactoryBridgeTest extends TestCase{
     @Test
     public void testCreateBean () {
 
+    }
+
+    public void testAopRead () throws IOException {
+
+        resource = new DefaultResource("src/test/resources/test-aop.xml");
+        ResourceReader resourceReader = new ResourceReader(resource);
+        Document document = resourceReader.getDocument();
+        bridge.parse(document);
+
+        BeanFactory beanFactory = factory;
+        System.out.println("-----------");
     }
 }

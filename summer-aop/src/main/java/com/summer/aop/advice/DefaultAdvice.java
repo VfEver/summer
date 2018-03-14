@@ -12,7 +12,9 @@ public class DefaultAdvice implements Advice {
 
     private Object advicor;
     private String advicorName;
-    Map<String, String> methodInterceptor = new HashMap<>(4);
+    Map<String, String> beforeMethodInterceptor = new HashMap<>(4);
+    Map<String, String> afterMethodInterceptor = new HashMap<>(4);
+
 
     public DefaultAdvice () {
     }
@@ -33,5 +35,23 @@ public class DefaultAdvice implements Advice {
 
     public void setAdvicorName(String advicorName) {
         this.advicorName = advicorName;
+    }
+
+    public void addBeforeMethodInterceptor (String methodName, String pointcutRef) {
+
+        this.beforeMethodInterceptor.put(methodName, pointcutRef);
+    }
+
+    public void addAfterMethodInterceptor (String methodName, String pointcutRef) {
+
+        this.afterMethodInterceptor.put(methodName, pointcutRef);
+    }
+
+    public Map<String, String> getBeforeMethodInterceptor() {
+        return beforeMethodInterceptor;
+    }
+
+    public Map<String, String> getAfterMethodInterceptor() {
+        return afterMethodInterceptor;
     }
 }

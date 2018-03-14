@@ -66,11 +66,11 @@
       <version>1.6.1</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl -->
-    <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-impl</artifactId>
-      <version>2.2.11</version>
-    </dependency>
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl &ndash;&gt;-->
+    <!--<dependency>-->
+      <!--<groupId>com.sun.xml.bind</groupId>-->
+      <!--<artifactId>jaxb-impl</artifactId>-->
+      <!--<version>2.2.11</version>-->
+    <!--</dependency>-->
   </dependencies>
 </project>

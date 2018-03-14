@@ -6,6 +6,7 @@ import com.summer.aop.pointcut.DefaultPointcut;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.util.Map;
 
 /**
  * jdk dynamic proxy that agents the suitable bean.
@@ -26,18 +27,29 @@ public class JdkProxy implements Proxy, InvocationHandler{
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
+        Object res = null;
+
         String methodName = method.getName();
         DefaultPointcut pointcut = (DefaultPointcut) aspect.getPointcut();
-
         if (pointcut.matchMethod(methodName)) {
 
             Object advicor = (DefaultAdvice) aspect.getAdvice().getAdvicor();
+            DefaultAdvice advice = (DefaultAdvice) aspect.getAdvice();
+            for (Map.Entry<String, String> entry : advice.getBeforeMethodInterceptor().entrySet()) {
 
+                Method beforeMethod = advicor.getClass().getMethod(entry.getKey());
+                beforeMethod.invoke(advicor, null);
+            }
+            res = method.invoke(proxy, args);
+            for (Map.Entry<String, String> entry : advice.getAfterMethodInterceptor().entrySet()) {
+
+                Method beforeMethod = advicor.getClass().getMethod(entry.getKey());
+                beforeMethod.invoke(advicor, null);
+            }
         }
 
-        Object obj = method.invoke(proxy, args);
 
-        return obj;
+        return res;
     }
 
 

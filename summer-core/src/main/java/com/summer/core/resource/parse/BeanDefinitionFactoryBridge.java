@@ -2,10 +2,8 @@ package com.summer.core.resource.parse;
 
 import com.summer.aop.advice.Advice;
 import com.summer.aop.advice.DefaultAdvice;
-import com.summer.aop.aspect.Aspect;
 import com.summer.aop.aspect.DefaultAspect;
 import com.summer.aop.pointcut.DefaultPointcut;
-import com.summer.aop.pointcut.Pointcut;
 import com.summer.beans.bean.BeanDefinition;
 import com.summer.beans.enums.BeanScopeEnum;
 import com.summer.beans.exception.SymbolNotDefinedException;
@@ -236,6 +234,10 @@ public class BeanDefinitionFactoryBridge {
         }
     }
 
+    /**
+     * aspect init.
+     * @param element
+     */
     private void initAspect (Element element) {
 
         Iterator<Element> iterator = element.elementIterator();
@@ -256,17 +258,33 @@ public class BeanDefinitionFactoryBridge {
                     String poiontcutName = childNode.attributeValue(ID);
                     pointcut.setPointcutName(poiontcutName);
                     aspect.setPointcut(pointcut);
+
+                    break;
                 }
 
                 case AOP_ASPECT : {
 
                     Advice advice = initAdvicor(childNode);
                     aspect.setAdvice(advice);
+
+                    break;
+                }
+
+                default: {
+
+                    break;
                 }
             }
         }
+
+        beanFactory.addAspcet(aspect);
     }
 
+    /**
+     * advice init
+     * @param element
+     * @return
+     */
     private Advice initAdvicor(Element element) {
 
         DefaultAdvice advice = new DefaultAdvice();
@@ -274,6 +292,34 @@ public class BeanDefinitionFactoryBridge {
         String advicorObject = element.attributeValue(REF);
         advice.setAdvicor(advicorObject);
         advice.setAdvicorName(advicorName);
+        Iterator<Element> iterator = element.elementIterator();
+        while (iterator.hasNext()) {
+
+            Element childNode = iterator.next();
+            switch (childNode.getName()) {
+
+                case AOP_BEFORE : {
+
+                    String methodName = childNode.attributeValue("method");
+                    String pointcutRef = childNode.attributeValue("pointcut-ref");
+                    advice.addBeforeMethodInterceptor(methodName, pointcutRef);
+                    break;
+                }
+
+                case AOP_AFTER : {
+
+                    String methodName = childNode.attributeValue("method");
+                    String pointcutRef = childNode.attributeValue("pointcut-ref");
+                    advice.addAfterMethodInterceptor(methodName, pointcutRef);
+                    break;
+                }
+
+                default: {
+
+                    break;
+                }
+            }
+        }
         return advice;
     }
 }

@@ -22,10 +22,10 @@ public class ProxyFactory {
         Class[] interfaces = object.getClass().getInterfaces();
         if (interfaces == null || interfaces.length <= 0) {
 
-            return new JdkProxy(object, aspect);
+            return new Cglibproxy();
         } else {
 
-            return new Cglibproxy();
+            return new JdkProxy(object, aspect);
         }
     }
 }

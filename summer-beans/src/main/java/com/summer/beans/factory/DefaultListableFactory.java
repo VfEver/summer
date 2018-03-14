@@ -3,8 +3,10 @@ package com.summer.beans.factory;
 import com.summer.aop.aspect.Aspect;
 import com.summer.beans.bean.BeanDefinition;
 import com.summer.beans.enums.BeanScopeEnum;
+import com.summer.beans.exception.BeanException;
 import com.summer.beans.exception.BeanNotFindException;
 import com.summer.beans.exception.CircleReferenceException;
+import com.summer.beans.weave.AopWeaveBean;
 import com.summer.common.logger.CommonLogger;
 import com.summer.common.support.Assert;
 import com.sun.istack.internal.Nullable;
@@ -35,6 +37,8 @@ public class DefaultListableFactory extends AbstractBeanFactory {
      * aspect list
      */
     private List<Aspect> aspects = new ArrayList<>(4);
+
+    private AopWeaveBean aopWeaveBean;
 
     public DefaultListableFactory () {
 
@@ -121,7 +125,6 @@ public class DefaultListableFactory extends AbstractBeanFactory {
                 object = createBean(beanDefinition);
 
             }
-            return (T) object;
         } else {
             //not a singleton object,check the circle dependency.
             if (prototypeInCreation(canonicalName)) {
@@ -142,8 +145,21 @@ public class DefaultListableFactory extends AbstractBeanFactory {
 
             //create bean
             object = createBean(beanDefinition);
-            return (T) object;
+
+
         }
+
+        if (aopWeaveBean == null) {
+            aopWeaveBean = new AopWeaveBean(aspects);
+        }
+        try {
+
+            object = aopWeaveBean.postProcessAfterInitialization(object, name);
+        } catch (BeanException e) {
+
+            logger.error(logInfo + "aop error, return the original bean. name - {}", name, e);
+        }
+        return (T) object;
 
     }
 
@@ -266,6 +282,10 @@ public class DefaultListableFactory extends AbstractBeanFactory {
 
     public void addAspcet (Aspect aspect) {
         aspects.add(aspect);
+    }
+
+    public List<Aspect> getAspects () {
+        return aspects;
     }
 
 }

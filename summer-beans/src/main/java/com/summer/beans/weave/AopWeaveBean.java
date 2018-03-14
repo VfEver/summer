@@ -1,4 +1,4 @@
-package com.summer.aop.weave;
+package com.summer.beans.weave;
 
 import com.summer.aop.aspect.Aspect;
 import com.summer.aop.pointcut.DefaultPointcut;
@@ -16,9 +16,18 @@ import java.util.List;
  * @author zys
  * @date 2018/03/10
  */
-public class AopWeaveBean implements BeanFactoryAware, BeanPostProcessor {
+public class AopWeaveBean implements BeanPostProcessor {
 
-    private BeanFactory beanFactory;
+    private List<Aspect> aspects;
+
+    public AopWeaveBean (List<Aspect> aspects) {
+
+        this.aspects = aspects;
+    }
+
+    public void setAspects(List<Aspect> aspects) {
+        this.aspects = aspects;
+    }
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeanException {
@@ -30,7 +39,6 @@ public class AopWeaveBean implements BeanFactoryAware, BeanPostProcessor {
 
         Object returnObj = bean;
 
-        List<Aspect> aspects = getAspects();
         for (Aspect aspect : aspects) {
 
             DefaultPointcut defaultAspect = (DefaultPointcut) aspect.getPointcut();
@@ -44,16 +52,4 @@ public class AopWeaveBean implements BeanFactoryAware, BeanPostProcessor {
         return returnObj;
     }
 
-    @Override
-    public void setBeanFactory(BeanFactory beanFactory) {
-
-        this.beanFactory = beanFactory;
-    }
-
-    private List<Aspect> getAspects () {
-
-        DefaultListableFactory defaultListableFactory = (DefaultListableFactory) beanFactory;
-        
-        return null;
-    }
 }
