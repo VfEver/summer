@@ -20,6 +20,9 @@ public class AopWeaveBean implements BeanPostProcessor {
 
     private List<Aspect> aspects;
 
+    public AopWeaveBean () {
+    }
+
     public AopWeaveBean (List<Aspect> aspects) {
 
         this.aspects = aspects;

@@ -290,7 +290,7 @@ public class BeanDefinitionFactoryBridge {
         DefaultAdvice advice = new DefaultAdvice();
         String advicorName = element.attributeValue(ID);
         String advicorObjectName = element.attributeValue(REF);
-        advice.setAdvicor(advicorObjectName);//todo
+        advice.setAdvicor(advicorObjectName);//put the name into the advicor.
         advice.setAdvicorName(advicorName);
         Iterator<Element> iterator = element.elementIterator();
         while (iterator.hasNext()) {

@@ -1,5 +1,6 @@
 package com.summer.beans.factory;
 
+import com.summer.aop.advice.DefaultAdvice;
 import com.summer.aop.aspect.Aspect;
 import com.summer.beans.bean.BeanDefinition;
 import com.summer.beans.enums.BeanScopeEnum;
@@ -39,6 +40,8 @@ public class DefaultListableFactory extends AbstractBeanFactory {
     private List<Aspect> aspects = new ArrayList<>(4);
 
     private AopWeaveBean aopWeaveBean;
+
+    private boolean aopFlag = false;
 
     public DefaultListableFactory () {
 
@@ -149,7 +152,19 @@ public class DefaultListableFactory extends AbstractBeanFactory {
 
         }
 
+        if (aopFlag) {
+
+            return (T) object;
+        }
+
         if (aopWeaveBean == null) {
+            aopFlag = true;
+            for (Aspect aspect : aspects) {
+
+                String advicorName = (String) aspect.getAdvice().getAdvicor();
+                Object advicor = getBean(advicorName);
+                ((DefaultAdvice) aspect.getAdvice()).setAdvicor(advicor);
+            }
             aopWeaveBean = new AopWeaveBean(aspects);
         }
         try {
